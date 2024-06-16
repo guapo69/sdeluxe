@@ -1,0 +1,2751 @@
+<!DOCTYPE html><html lang="fr-FR" class="default"><head><script type="text/javascript" async="" src="js/events.js"></script><script async="" src="js/scevent.min.js"></script><script async="" src="js/gtm.js"></script><script data-keepinline="true">
+    let cookiesplusCookieValue = null;
+
+    for (let cookie of document.cookie.split(';')) {
+        let [cookieName, value] = cookie.trim().split('=');
+        if (cookieName === 'cookiesplus') {
+            cookiesplusCookieValue = decodeURIComponent(value);
+        }
+    }
+
+    cookiesplusCookieValue = JSON.parse(cookiesplusCookieValue);
+
+    // Define keys and their default values
+    Object.keys({
+        'ad_storage': false,
+        'ad_user_data': false,
+        'ad_personalization': false,
+        'analytics_storage': false,
+        'functionality_storage': false,
+        'personalization_storage': false,
+        'security_storage': false,
+    }).forEach(function (key) {
+        window[key] = false;
+    });
+
+    // Check and update values based on cookiesplusCookieValue
+    if (cookiesplusCookieValue && cookiesplusCookieValue.consent_mode) {
+        cookiesplusConsents = Object.keys(cookiesplusCookieValue.consent_mode).filter(v => v.startsWith('cookiesplus-finality'));
+
+        cookiesplusConsents.forEach(function (key) {
+            const consent_type = cookiesplusCookieValue.consent_mode?.[key]?.consent_type;
+            if (typeof cookiesplusCookieValue.consents !== 'undefined'
+                && typeof cookiesplusCookieValue.consents[key] !== 'undefined'
+                && cookiesplusCookieValue.consents[key] === 'on' && consent_type) {
+                Object.entries(consent_type).forEach(([innerKey, value]) => {
+                    if (value) {
+                        window[innerKey] = true;
+                    }
+                });
+            }
+        });
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('consent', 'default', {
+        'ad_storage' : ad_storage ? 'granted' : 'denied',
+        'ad_user_data' : ad_user_data ? 'granted' : 'denied',
+        'ad_personalization' : ad_personalization ? 'granted' : 'denied',
+        'analytics_storage' : analytics_storage ? 'granted' : 'denied',
+        'functionality_storage' : functionality_storage ? 'granted' : 'denied',
+        'personalization_storage' : personalization_storage ? 'granted' : 'denied',
+        'security_storage' : security_storage ? 'granted' : 'denied',
+        'wait_for_update' : 500
+    });
+
+    gtag('set', 'url_passthrough', true);
+    gtag('set', 'ads_data_redaction', true);
+</script>
+
+
+
+  <meta charset="utf-8">
+
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+  <title>RP Parfums</title>
+<script data-keepinline="true">
+    var ajaxGetProductUrl = '//rpparfums.fr/fr/module/cdc_googletagmanager/async';
+    var ajaxShippingEvent = 1;
+    var ajaxPaymentEvent = 1;
+
+/* datalayer */
+dataLayer = window.dataLayer || [];
+    let cdcDatalayer = {"pageCategory":"index","event":null,"ecommerce":{"currency":"EUR"},"google_tag_params":{"ecomm_pagetype":"home"},"userLogged":0,"userId":"guest_2050974"};
+    dataLayer.push(cdcDatalayer);
+
+/* call to GTM Tag */
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJSCF3Q');
+
+/* async call to avoid cache system for dynamic data */
+dataLayer.push({
+  'event': 'datalayer_ready'
+});
+</script>
+
+  
+    
+  
+  <meta name="description" content="Maison de parfum-Sprays textiles, Bougies, Coffrets cosmétiques, Brumes corps &amp; cheveux">
+  <meta name="keywords" content="">
+        <link rel="canonical" href="https://rpparfums.fr/fr/">
+    
+          <link rel="alternate" href="https://rpparfums.fr/en/" hreflang="en-us">
+          <link rel="alternate" href="https://rpparfums.fr/be/" hreflang="fr-fr">
+          <link rel="alternate" href="https://rpparfums.fr/es/" hreflang="es-es">
+          <link rel="alternate" href="https://rpparfums.fr/it/" hreflang="it-it">
+          <link rel="alternate" href="https://rpparfums.fr/de/" hreflang="de-de">
+          <link rel="alternate" href="https://rpparfums.fr/nl/" hreflang="nl-nl">
+      
+  
+  
+    
+
+
+  
+
+  
+  
+  
+  
+  
+    
+  
+
+  
+    <meta property="og:title" content="RP Parfums">
+    <meta property="og:description" content="Maison de parfum-Sprays textiles, Bougies, Coffrets cosmétiques, Brumes corps &amp; cheveux">
+    <meta property="og:url" content="https://rpparfums.fr/fr/">
+    <meta property="og:site_name" content="RP Parfums">
+    <meta property="og:type" content="website">    
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+  
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,regular,700,200,500,600%7CBarlow:regular,italic,500,600,700,800,900,500italic%7CPoppins:300,regular,500,600,700,100,200,800,900%7CInter:100,200,300,regular,500,600,700,800,900%7CMontserrat:100,200,300,regular,500,600,700,800,900%7CPlayfair+Display:regular,700,900&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+  <link rel="stylesheet" href="css/theme-001c5e374.css" type="text/css" media="all">
+
+
+
+    
+
+
+  
+
+  <script type="text/javascript">
+        var LEO_COOKIE_THEME = "RPPARFUMS_PANEL_CONFIG";
+        var LS_Meta = [];
+        var add_cart_error = "An error occurred while processing your request. Please try again";
+        var ajaxsearch = "1";
+        var btPixel = {"btnAddToWishlist":"button.wishlist-button-add","tagContent":{"sPixel":"5072379346167836","aDynTags":{"content_type":{"label":"content_type","value":"product"},"value":{"label":"value","value":null},"content_name":{"label":"content_name","value":"Homepage"},"content_category":{"label":"content_category","value":"Homepage"}},"sCR":"\n","aTrackingType":{"label":"tracking_type","value":"ViewContentHomepage"},"sJsObjName":"oPixelFacebook"},"pixel_id":"5072379346167836","bUseConsent":"0","iConsentConsentLvl":0,"bConsentHtmlElement":"","bConsentHtmlElementSecond":"","bUseAxeption":"0","token":"79bdd040e907713ee8726de3d0821c27","ajaxUrl":"https:\/\/rpparfums.fr\/fr\/module\/facebookproductad\/ajax","external_id":2050974,"useAdvancedMatching":true,"advancedMatchingData":false,"eventId":"e3f10a1160df6c0437968b72fcda860b","fbdaSeparator":"-","pixelCurrency":"EUR","comboExport":"0","prefix":"","prefixLang":"","useConversionApi":"1","useApiForPageView":"0","currentPage":"home","id_order":false,"id_product_attribute":false};
+        var btTkpPixel = {"btnOrder":"button[name=\"confirm-addresses\"]","elementCategoryProduct":"","elementCategoryWishlist":".wishlist-button-add","elementProductWishlist":".wishlist-button-product","useAdvancedMatcing":false,"userEmail":"","bUseConsent":"0","iConsentConsentLvl":0,"bConsentHtmlElement":"","tagContent":{"tracking_type":{"label":"tracking_type","value":"ViewContent"},"content_type":{"label":"content_type","value":"product"},"content_name":{"label":"content_name","value":"Homepage"}},"token":"79bdd040e907713ee8726de3d0821c27","ajaxUrl":"https:\/\/rpparfums.fr\/fr\/module\/bttiktokpixel\/ajax","tkpSeparator":"v"};
+        var cpContactToken = "333eef705d2065c3dd1bd5918fac9639";
+        var customizeText = "Personnaliser";
+        var ed_ajax_delay = "0";
+        var enable_dropdown_defaultcart = 1;
+        var enable_flycart_effect = 1;
+        var enable_notification = 0;
+        var etsSeoFo = {"currentController":"index","conf":{"removeId":false}};
+        var height_cart_item = "135";
+        var leo_push = 0;
+        var leo_search_url = "https:\/\/rpparfums.fr\/fr\/module\/leoproductsearch\/productsearch";
+        var leo_token = "79bdd040e907713ee8726de3d0821c27";
+        var leoproductsearch_static_token = "79bdd040e907713ee8726de3d0821c27";
+        var leoproductsearch_token = "8a0612c48cf9decb2e51668a57e6d369";
+        var lf_is_gen_rtl = false;
+        var lps_show_product_img = "1";
+        var lps_show_product_price = "1";
+        var lql_ajax_url = "https:\/\/rpparfums.fr\/fr\/module\/leoquicklogin\/leocustomer";
+        var lql_is_gen_rtl = false;
+        var lql_module_dir = "\/modules\/leoquicklogin\/";
+        var lql_myaccount_url = "https:\/\/rpparfums.fr\/fr\/mon-compte";
+        var lql_redirect = "";
+        var number_cartitem_display = 3;
+        var numpro_display = "100";
+        var oosn_id_module = "208";
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"0,00\u00a0\u20ac"},"total_including_tax":{"type":"total","label":"Total TTC","amount":0,"value":"0,00\u00a0\u20ac"},"total_excluding_tax":{"type":"total","label":"Total HT :","amount":0,"value":"0,00\u00a0\u20ac"}},"subtotals":{"products":{"type":"products","label":"Sous-total","amount":0,"value":"0,00\u00a0\u20ac"},"discounts":null,"shipping":{"type":"shipping","label":"Livraison","amount":0,"value":""},"tax":{"type":"tax","label":"Taxes incluses","amount":0,"value":"0,00\u00a0\u20ac"}},"products_count":0,"summary_string":"0 articles","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":2,"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Fran\u00e7ais (French)","iso_code":"fr","locale":"fr-FR","language_code":"fr-fr","is_rtl":"0","date_format_lite":"d\/m\/Y","date_format_full":"d\/m\/Y H:i:s","id":2},"page":{"title":"","canonical":null,"meta":{"title":"RP Parfums","description":"Maison de parfum-Sprays textiles, Bougies, Coffrets cosm\u00e9tiques, Brumes corps & cheveux","keywords":"","robots":"index"},"page_name":"index","body_classes":{"lang-fr":true,"lang-rtl":false,"country-FR":true,"currency-EUR":true,"layout-full-width":true,"page-index":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"RP Parfums","logo":"https:\/\/rpparfums.fr\/img\/logo-1700431939.jpg","stores_icon":"https:\/\/rpparfums.fr\/img\/logo_stores.png","favicon":"https:\/\/rpparfums.fr\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/rpparfums.fr\/","current_url":"https:\/\/rpparfums.fr\/fr\/","shop_domain_url":"https:\/\/rpparfums.fr","img_ps_url":"https:\/\/rpparfums.fr\/img\/","img_cat_url":"https:\/\/rpparfums.fr\/img\/c\/","img_lang_url":"https:\/\/rpparfums.fr\/img\/l\/","img_prod_url":"https:\/\/rpparfums.fr\/img\/p\/","img_manu_url":"https:\/\/rpparfums.fr\/img\/m\/","img_sup_url":"https:\/\/rpparfums.fr\/img\/su\/","img_ship_url":"https:\/\/rpparfums.fr\/img\/s\/","img_store_url":"https:\/\/rpparfums.fr\/img\/st\/","img_col_url":"https:\/\/rpparfums.fr\/img\/co\/","img_url":"https:\/\/rpparfums.fr\/themes\/rpparfums\/assets\/img\/","css_url":"https:\/\/rpparfums.fr\/themes\/rpparfums\/assets\/css\/","js_url":"https:\/\/rpparfums.fr\/themes\/rpparfums\/assets\/js\/","pic_url":"https:\/\/rpparfums.fr\/upload\/","pages":{"address":"https:\/\/rpparfums.fr\/fr\/adresse","addresses":"https:\/\/rpparfums.fr\/fr\/adresses","authentication":"https:\/\/rpparfums.fr\/fr\/connexion","cart":"https:\/\/rpparfums.fr\/fr\/panier","category":"https:\/\/rpparfums.fr\/fr\/index.php?controller=category","cms":"https:\/\/rpparfums.fr\/fr\/index.php?controller=cms","contact":"https:\/\/rpparfums.fr\/fr\/nous-contacter","discount":"https:\/\/rpparfums.fr\/fr\/reduction","guest_tracking":"https:\/\/rpparfums.fr\/fr\/suivi-commande-invite","history":"https:\/\/rpparfums.fr\/fr\/historique-commandes","identity":"https:\/\/rpparfums.fr\/fr\/identite","index":"https:\/\/rpparfums.fr\/fr\/","my_account":"https:\/\/rpparfums.fr\/fr\/mon-compte","order_confirmation":"https:\/\/rpparfums.fr\/fr\/confirmation-commande","order_detail":"https:\/\/rpparfums.fr\/fr\/index.php?controller=order-detail","order_follow":"https:\/\/rpparfums.fr\/fr\/suivi-commande","order":"https:\/\/rpparfums.fr\/fr\/commande","order_return":"https:\/\/rpparfums.fr\/fr\/index.php?controller=order-return","order_slip":"https:\/\/rpparfums.fr\/fr\/avoirs","pagenotfound":"https:\/\/rpparfums.fr\/fr\/page-introuvable","password":"https:\/\/rpparfums.fr\/fr\/recuperation-mot-de-passe","pdf_invoice":"https:\/\/rpparfums.fr\/fr\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/rpparfums.fr\/fr\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/rpparfums.fr\/fr\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/rpparfums.fr\/fr\/promotions","product":"https:\/\/rpparfums.fr\/fr\/index.php?controller=product","search":"https:\/\/rpparfums.fr\/fr\/recherche","sitemap":"https:\/\/rpparfums.fr\/fr\/plan-site","stores":"https:\/\/rpparfums.fr\/fr\/index.php?controller=stores","supplier":"https:\/\/rpparfums.fr\/fr\/fournisseur","register":"https:\/\/rpparfums.fr\/fr\/connexion?create_account=1","order_login":"https:\/\/rpparfums.fr\/fr\/commande?login=1"},"alternative_langs":{"en-us":"https:\/\/rpparfums.fr\/en\/","fr-fr":"https:\/\/rpparfums.fr\/be\/","es-es":"https:\/\/rpparfums.fr\/es\/","it-it":"https:\/\/rpparfums.fr\/it\/","de-de":"https:\/\/rpparfums.fr\/de\/","nl-nl":"https:\/\/rpparfums.fr\/nl\/"},"theme_assets":"\/themes\/rpparfums\/assets\/","actions":{"logout":"https:\/\/rpparfums.fr\/fr\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-small_default.jpg","width":98,"height":128},"cart_default":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-cart_default.jpg","width":125,"height":163},"medium_default":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-medium_default.jpg","width":378,"height":494},"home_default":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-home_default.jpg","width":400,"height":522},"large_default":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-large_default.jpg","width":600,"height":784}},"small":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-small_default.jpg","width":98,"height":128},"medium":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-medium_default.jpg","width":378,"height":494},"large":{"url":"https:\/\/rpparfums.fr\/img\/p\/fr-default-large_default.jpg","width":600,"height":784},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":false},"quantity_discount":{"type":"discount","label":"Remise sur prix unitaire"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Accueil","url":"https:\/\/rpparfums.fr\/fr\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1718520556,"static_token":"79bdd040e907713ee8726de3d0821c27","token":"8a0612c48cf9decb2e51668a57e6d369","debug":false};
+        var psemailsubscription_subscription = "https:\/\/rpparfums.fr\/fr\/module\/ps_emailsubscription\/subscription";
+        var psr_icon_color = "#000000";
+        var show_popup = 1;
+        var text_no_product = "Don't have products";
+        var text_results_count = "results";
+        var type_dropdown_defaultcart = "slidebar_right";
+        var type_flycart_effect = "fade";
+        var url_leoproductattribute = "https:\/\/rpparfums.fr\/fr\/module\/leofeature\/LeoProductAttribute";
+        var width_cart_item = "265";
+      </script>
+<script type="text/javascript">
+	var choosefile_text = "Choisir un fichier";
+	var turnoff_popup_text = "Do not show this popup again";
+	
+	var size_item_quickview = 82;
+	var style_scroll_quickview = 'vertical';
+	
+	var size_item_page = 113;
+	var style_scroll_page = 'horizontal';
+	
+	var size_item_quickview_attr = 101;	
+	var style_scroll_quickview_attr = 'vertical';
+	
+	var size_item_popup = 160;
+	var style_scroll_popup = 'vertical';
+</script>
+
+
+  
+	<meta data-module="adp-microdatos-opengraph-begin_p17v4.3.3">
+	<meta property="og:url" content="https://rpparfums.fr/fr/">
+
+	<meta property="og:title" content="RP Parfums">
+	<meta property="og:description" content="Maison de parfum-Sprays textiles, Bougies, Coffrets cosmétiques, Brumes corps &amp; cheveux">
+	<meta property="og:site_name" content="RP Parfums">
+	<meta property="og:locale" content="fr_fr">
+			<meta property="og:locale:alternate" content="en_us">
+					<meta property="og:locale:alternate" content="es_es">
+				<meta property="og:locale:alternate" content="it_it">
+				<meta property="og:locale:alternate" content="de_de">
+				<meta property="og:locale:alternate" content="nl_nl">
+		
+	
+	<meta property="og:type" content="website">
+										<meta property="og:image" content="images/logo-1700431939.jpg">
+						<meta property="og:image:width" content="700">
+			<meta property="og:image:height" content="700">
+			<meta property="og:image:type" content="image/png">
+				<meta property="og:image:alt" content="RP Parfums">
+	
+<!-- TwitterCard -->
+<meta name="twitter:card" content="summary_large_image">
+
+	<meta name="twitter:title" content="RP Parfums">
+
+	<meta name="twitter:description" content="Maison de parfum-Sprays textiles, Bougies, Coffrets cosmétiques, Brumes corps &amp; cheveux">
+
+
+	 
+									<meta property="twitter:image" content="https://rpparfums.fr/img/logo-1700431939.jpg">
+					
+	
+	<meta property="twitter:image:alt" content="RP Parfums">
+
+
+<meta name="twitter:site" content="RP Parfums">
+
+<meta name="twitter:creator" content="RP Parfums">
+
+<meta name="twitter:domain" content="https://rpparfums.fr/fr/">
+	
+	<meta data-module="adp-microdatos-opengraph-end_p17v4.3.3">
+<!-- Microdatos Organization -->
+	
+<script type="application/ld+json" id="adpmicrodatos-organization-ps17v4.3.3">
+{
+    "name" : "RP Parfums",
+    "url" : "https://rpparfums.fr/",
+    "logo" : [
+    	{
+
+    	"@type" : "ImageObject",
+    	"url" : "https://rpparfums.fr/img/logo-1700431939.jpg"
+    	}
+    ],
+    "email" : "contact@rpparfums.fr",
+			"description": "Maison de parfum-Sprays textiles, Bougies, Coffrets cosm\u00e9tiques, Brumes corps & cheveux",
+					
+	"@context": "http://schema.org",
+	"@type" : "Organization"
+}
+</script>
+
+
+<!-- Microdatos Webpage -->
+	
+<script type="application/ld+json" id="adpmicrodatos-webpage-ps17v4.3.3">
+{
+    "@context": "http://schema.org",
+    "@type" : "WebPage",
+    "isPartOf": [{
+        "@type":"WebSite",
+        "url":  "https://rpparfums.fr/fr/",
+        "name": "RP Parfums"
+    }],
+    "name": "RP Parfums",
+    "url": "https://rpparfums.fr/fr/"
+}
+</script>
+
+<!-- Microdatos Website -->
+	
+
+
+<script type="application/ld+json" id="adpmicrodatos-website-ps17v4.3.3">
+{
+	"@context":	"http://schema.org",
+	"@type": "WebSite",
+	"url": "https://rpparfums.fr/",
+	"name": "RP Parfums",
+	"alternateName": "RP Parfums",
+	"image": [{
+		"@type": "ImageObject",
+		"url":  "https://rpparfums.fr/img/logo-1700431939.jpg"
+	}],
+	"inLanguage": "fr",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://rpparfums.fr/fr/recherche?controller=search&s={s}",
+		"query-input": "required name=s"
+	}
+}
+
+</script>
+
+
+
+
+<script type="text/javascript">
+	
+	var FancyboxI18nClose = "Fermer";
+	var FancyboxI18nNext = "Prochain";
+	var FancyboxI18nPrev = "précédent";
+	var current_link = "http://rpparfums.fr/fr/";		
+	var currentURL = window.location;
+	currentURL = String(currentURL);
+	currentURL = currentURL.replace("https://","").replace("http://","").replace("www.","").replace( /#\w*/, "" );
+	current_link = current_link.replace("https://","").replace("http://","").replace("www.","");
+	var text_warning_select_txt = "S'il vous plaît sélectionner un pour supprimer?";
+	var text_confirm_remove_txt = "Etes-vous sûr de retirer de pied de page?";
+	var close_bt_txt = "Fermer";
+	var list_menu = [];
+	var list_menu_tmp = {};
+	var list_tab = [];
+	var isHomeMenu = 0;
+	
+</script>
+    <!-- Snap Pixel Code -->
+    <script type="text/javascript">
+        (function (e, t, n) {
+            if (e.snaptr) return;
+            var a = e.snaptr = function () {
+                a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments)
+            };
+            a.queue = [];
+            var s = 'script';
+            r = t.createElement(s);
+            r.async = !0;
+            r.src = n;
+            var u = t.getElementsByTagName(s)[0];
+            u.parentNode.insertBefore(r, u);
+        })(window, document, 'https://sc-static.net/scevent.min.js');
+
+        snaptr('init', '15450875-26d7-4367-a104-0298ce0e8aa6', {
+            'user_email': 'no-email@email.com'
+        });
+
+        snaptr('track','PAGE_VIEW');
+
+        
+                    
+    </script>
+    <!-- End Snap Pixel Code -->
+    
+    <!-- manage the click event on the wishlist and the add to cart -->
+              <meta property="og:url" content="https://rpparfums.fr/fr/">
+      <meta property="og:title" content="RP Parfums">
+      <meta property="og:description" content="Maison de parfum-Sprays textiles, Bougies, Coffrets cosmétiques, Brumes corps &amp; cheveux">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="article">
+                  <meta property="article:publisher" content="https://www.facebook.com/ParfumsRP">
+                                                                
+  <script type="application/ld+json" class="ets-seo-schema-graph--main">
+    {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://rpparfums.fr/#website","url":"https://rpparfums.fr/","name":"RP Parfums","potentialAction":{"@type":"SearchAction","target":"https://rpparfums.fr/search?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","@id":"https://rpparfums.fr/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","name":"RP Paris","@id":"https://rpparfums.fr/fr/","url":"https://rpparfums.fr/fr/"}}]}]}
+</script>
+<meta id="cp-meta" name="Generator" content="Powered by Creative Popup 1.6.10 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Popup Module for PrestaShop."><script type="text/html">
+<div class="cp-popup"><form id="cp_11" name="cp_11" class="cp-ps-container fitvidsignore" method="post" action="/" style="width:720px;height:525px;margin:0 auto;margin-bottom: 0px;"><div class="cp-slide" data-cp="overflow:true;kenburnsscale:1.2;"><embed src="https://rpparfums.fr/img/cp-11-page-1.jpg" class="cp-tn" alt="Page thumbnail" /><embed style="top:-43px;left:-9px;height:528px;z-index:98;" class="cp-l" src="https://rpparfums.fr/img/oie_Sjmbgp9wv21f.jpg" alt="" data-cp="offsetyin:300;easingin:easeOutQuint;fadein:false;scalexin:1.4;scaleyin:1.4;clipin:20% 20% 20% 20%;static:forever;"><div style="top:40px;left:320px;font-size:18px;width:400px;height:500px;background:#ffffff;z-index:99;" class="cp-l" data-cp="offsetyin:300;delayin:50;easingin:easeOutQuint;fadein:false;scalexin:0.9;static:forever;"></div><p style="white-space: normal;top:88px;left:350px;font-weight:700;font-family:Inter;font-size:28px;color:#000000;width:340px;line-height:40px;" class="cp-l" data-cp="offsetyin:200;delayin:100;easingin:easeOutQuint;fadein:false;offsetyout:10;">Inscrivez-vous et bénéficiez de 10 % de réduction sur votre première achat !</p><input type="email" name="email" placeholder="Entrer votre email" required style="
+outline:none;
+box-shadow:none;
+;top:325px;left:350px;text-align:left;font-weight:500;width:300px;background:#ffffff;line-height:36px;height:36px;font-family:Inter;font-size:16px;color:rgba(0,0,0,.9);border-radius:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;border-bottom:2px solid rgba(0,0,0,0.5);border-top:none;border-right:none;border-left:none;" class="cp-l" data-cp="offsetyin:200;delayin:150;easingin:easeOutQuint;fadein:false;offsetyout:10;"><label style="top:376px;left:350px;font-weight:500;font-family:Inter;font-size:12px;color:rgba(0,0,0,.9);line-height:22px;" class="cp-l" data-cp="offsetyin:200;delayin:150;easingin:easeOutQuint;fadein:false;offsetyout:10;"><input type="checkbox" name="psgdpr_consent_checkbox" required> 
+J'accepte de recevoir la Newsletter RP Parfums
+</label><p style="border: none;
+;top:462px;left:461px;text-align:center;font-weight:500;background:#000000;line-height:11px;border-radius:0px;color:#ffffff;font-size:3px;font-family:'Playfair Display';padding-right:30px;padding-left:30px;padding-top:0px;padding-bottom:0px;height:10px;" class="cp-l" data-cp="offsetyin:200;delayin:200;easingin:easeOutQuint;fadein:false;offsetyout:10;hover:true;hoverdurationin:300;hoverbgcolor:#333333;hovercolor:#ffffff;"><input type="submit" name="submitNewsletter" value="S'inscrire"></p><a style="" class="cp-l" href="#closepopup" target="_self" data-cp="offsetyin:300;delayin:50;easingin:easeOutQuint;fadein:false;scalexin:0.9;hover:true;hovercolor:#ffffff;static:forever;"><div style="top:16px;left:701px;font-size:14px;width:14px;height:14px;color:rgba(255, 255, 255, 0.75);" class=""><svg viewbox="0 0 28 28"><polygon style="fill:currentColor;" points="28,22.398 19.594,14 28,5.602 22.398,0 14,8.402 5.598,0 0,5.602 8.398,14 0,22.398 5.598,28 14,19.598 22.398,28 "></polygon></svg></div></a></div><div class="cp-slide" data-cp="deeplink:success;overflow:true;kenburnsscale:1.2;"><embed src="/modules/creativepopup/views/img/core/skins/noskin/nothumb.png" class="cp-tn" alt="Page thumbnail" /><p style="white-space: normal;top:88px;left:350px;font-weight:700;font-family:Inter;font-size:28px;color:#000000;width:340px;line-height:40px;" class="cp-l" data-cp="offsetyin:-10;">Merci!</p><p style="white-space: normal;top:137px;left:350px;font-weight:700;font-family:Inter;font-size:28px;color:#000000;line-height:40px;width:340px;" class="cp-l" data-cp="offsetyin:-10;">Merci d'utiliser ce code promo lors de votre prochaine commande</p><p style="top:325px;left:350px;font-weight:600;font-family:Inter;font-size:18px;color:#000000;line-height:49px;background:#ffffff;padding-right:60px;padding-left:60px;border-top:2px dashed #000;border-right:2px dashed #000;border-bottom:2px dashed #000;border-left:2px dashed #000;" class="cp-l" data-cp="offsetyin:-10;">FIRST10</p><a style="" class="cp-l" href="#closepopup" target="_self" data-cp="offsetyin:-10;hover:true;hoverdurationin:300;hoverbgcolor:#333333;hovercolor:#ffffff;"><p style="border: none;
+;top:432px;left:350px;text-align:center;font-weight:500;font-family:Inter;font-size:15px;color:#ffffff;line-height:52px;background:#000000;padding-right:30px;padding-left:30px;height:50px;padding-top:0px;padding-bottom:0px;border-radius:0px;" class="">FERMER</p></a></div></form></div><js>
+cpjq("#cp_11").creativePopup({createdWith: '1.6.4', popupVersion: '1.6.10', type: 'popup', pauseOnHover: 'disabled', skin: 'noskin', sliderFadeInDuration: 350, globalBGSize: 'auto', popupAvoidMultiple: 1, popupShowOnLeave: true, popupShowOnTimeout: 1, popupShowOnce: false, popupShowCloseButton: false, popupCloseButtonStyle: 'left:auto; right:0px;border:none;background:transparent;', popupWidth: 720, popupHeight: 525, popupDelayIn: 0, popupTransitionIn: 'slidefrombottom', popupTransitionOut: 'slidetobottom', subscribed: -1, repeatDays: 0, skinsPath: '/modules/creativepopup/views/css/core/skins/', plugins: ["popup"]});
+</js>
+</script>
+<script type="text/javascript">
+        var link_cart = "https://rpparfums.fr/fr/panier";
+            var link_reward = "https://rpparfums.fr/fr/affiliate-dashboard?ajax=1";
+            var link_shopping_cart = "https://rpparfums.fr/fr/module/ps_shoppingcart/ajax";
+            var eam_sending_email = "Envoi...";
+    var eam_email_invalid = "Le courriel est invalide";
+    var eam_email_sent_limited = "Vous avez atteint le nombre maximum d'invitations";
+    var eam_token = "79bdd040e907713ee8726de3d0821c27";
+    var name_is_blank = 'Le nom est requis';
+    var email_is_blank = 'Email est requis';
+    var email_is_invalid = 'Le courriel est invalide';
+</script>
+    <!-- Tiktok Product Ad Module by BusinessTech - Start TikTok Pixel Code -->
+    
+        <script>
+            ! function(w, d, t) {
+                w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+                    ttq.load('C9HV90EGS62IRPN0SG2G');
+                                    ttq.track('ViewContent', {
+                    
+                                                                                                                    content_type : 'product',
+                                                                                                content_name : 'Homepage'                                                                
+                 })
+                                }(window, document, 'ttq');
+            </script>
+        
+        <!-- Tiktok Product Ad Module by BusinessTech - End TikTok Pixel Code --></head><body id="index" class="lang-fr country-fr currency-eur layout-full-width page-index tax-display-enabled fullwidth"><iframe src="javascript:false" title="" role="presentation" style="display: none;"></iframe><script type="text/javascript">
+	zendesk_subdomain = "rpparfumshelp";
+	zendesk_iso = "fr";
+
+	
+	/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js",zendesk_subdomain+".zendesk.com");/*]]>*/
+
+	zE(function() {
+		zE.setLocale(zendesk_iso);
+	});
+	
+</script><script type="text/javascript">
+    var ed_refresh_delay = 0;
+    var ed_hour = 'heures';
+    var ed_minute = 'minutes';
+    var ed_hours = 'heures';
+    var ed_minutes = 'minutes';
+    var ed_and = 'et';
+    var ed_refresh = 'Heure limite de ramassage dépassée, veuillez rafraîchir votre navigateur afin de calculer la nouvelle Estimation de livraison.';
+    /*var ed_has_combi = ; */
+    var ed_placement = 0;
+    var ed_custom_sel = unescapeHTML('');
+    var ed_custom_ins = '2';
+    var ed_sm = 1;
+    var ed_in_modal = 0;
+    var front_ajax_url = 'https://rpparfums.fr/fr/module/estimateddelivery/AjaxRefresh?token=dd35cc694060b7ef5cab8c9812e99bc3&ajax=1';     var front_ajax_cart_url = 'https://rpparfums.fr/fr/module/estimateddelivery/AjaxCart?token=dd35cc694060b7ef5cab8c9812e99bc3&ajax=1';
+    var ps_version = '17';
+    var ed_display_option = -1;
+
+
+    function unescapeHTML(html) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        return doc.documentElement.textContent;
+    }
+</script>
+<script type="text/javascript">
+    
+        var oosn_front_controller_url = 'https://rpparfums.fr/fr/module/hioutofstocknotification/subscribe';
+        var psv = 1.7;
+        var oosn_secure_key = '4de03c425d5b2423c441ad17a68c1654';
+        var oosn_position = 'page';
+        var quantity = 0;
+        var id_product = 0;
+        var id_combination = 0;
+        var oosn_stock_managment = 0;
+    
+</script>
+<!-- @file modules\appagebuilder\views\templates\hook\header -->
+
+<script>
+	/**
+	 * List functions will run when document.ready()
+	 */
+	var ap_list_functions = [];
+	/**
+	 * List functions will run when window.load()
+	 */
+	var ap_list_functions_loaded = [];
+
+	/**
+	 * List functions will run when document.ready() for theme
+	 */
+
+	var products_list_functions = [];
+</script>
+
+
+<script type="text/javascript">
+	var leoOption = {
+		category_qty:1,
+		product_list_image:0,
+		product_one_img:1,
+		productCdown: 1,
+		productColor: 0,
+		homeWidth: 400,
+		homeheight: 522,
+	}
+
+	ap_list_functions.push(function(){
+		if (typeof $.LeoCustomAjax !== "undefined" && $.isFunction($.LeoCustomAjax)) {
+			var leoCustomAjax = new $.LeoCustomAjax();
+			leoCustomAjax.processAjax();
+		}
+	});
+</script>
+<style>
+            div#cookiesplus-modal,
+        #cookiesplus-modal > div,
+        #cookiesplus-modal p {
+            background-color: #000000 !important;
+        }
+    
+            #cookiesplus-modal > div,
+        #cookiesplus-modal p {
+            color: #ffffff !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-accept {
+            background-color: #ffffff !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-accept {
+            border: 1px solid #ffffff !important;
+        }
+    
+
+            #cookiesplus-modal .cookiesplus-accept {
+            color: #000000 !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-accept {
+            font-size: 14px !important;
+        }
+    
+    
+            #cookiesplus-modal .cookiesplus-more-information {
+            background-color: #FFFFFF !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-more-information {
+            border: 1px solid #7A7A7A !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-more-information {
+            color: #000 !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-more-information {
+            font-size: 14px !important;
+        }
+    
+    
+            #cookiesplus-modal .cookiesplus-reject {
+            background-color: #ffffff !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-reject {
+            border: 1px solid #ffffff !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-reject {
+            color: #000000 !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-reject {
+            font-size: 14px !important;
+        }
+    
+    
+            #cookiesplus-modal .cookiesplus-save:not([disabled]) {
+            background-color: #FFFFFF !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-save:not([disabled]) {
+            border: 1px solid #7A7A7A !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-save:not([disabled]) {
+            color: #000 !important;
+        }
+    
+            #cookiesplus-modal .cookiesplus-save {
+            font-size: 14px !important;
+        }
+    
+    
+    
+    #cookiesplus-tab {
+                                    bottom: 0;
+                left: 0;
+                    
+        
+            }
+</style>
+<meta name="google-site-verification" content="hn2F3WSQV8nH-Mum-UktBKNHkVSidTSIV1ELw4p9b9U"><!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-428735648"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-428735648');
+</script>
+<script id="hookHeader_85_03b7ad0d06"></script>
+<script>
+    var hookModuleData = [];
+    hookModuleData['id_module'] = '85';
+    hookModuleData['location'] = '#hookHeader_85_03b7ad0d06';
+    hookModuleData['finalities'] = "4";
+    hookModuleData['script'] = "<script type=\"text\/javascript\">\n    (function() {\n        window.sib = {\n            equeue: [],\n            client_key: \"f0xbzc1ecttuz67gyzj55tyd\"\n        };\n\n    \n        window.sendinblue = { } ;\n        for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {\n            (function(k) {\n                window.sendinblue[k] = function() {\n                    var arg = Array.prototype.slice.call(arguments);\n                    (window.sib[k] || function() {\n                        var t = { } ;\n                        t[k] = arg;\n                        window.sib.equeue.push(t);\n                    })(arg[0], arg[1], arg[2]);\n                };\n            })(j[i]);\n        }\n        var n = document.createElement(\"script\"),\n            i = document.getElementsByTagName(\"script\")[0];\n        n.type = \"text\/javascript\", n.id = \"sendinblue-js\", n.async = !0, n.src = \"https:\/\/sibautomation.com\/sa.js?plugin=prestashop&key=\" + window.sib.client_key, i.parentNode.insertBefore(n, i), window.sendinblue.page();\n    })();\n<\/script>\n";
+    hookModuleData['js'] = [];
+    hookModuleData['css'] = [];
+    var cookiesPlusBlockedScripts = cookiesPlusBlockedScripts || [];
+    cookiesPlusBlockedScripts.push(hookModuleData);
+    var hookModuleData = [];
+</script>
+    <style type="text/css">.color1{color: #ee9a00!important;fill: #ee9a00!important} .background1{background: #ee9a00!important;border-color: #ee9a00!important} .hover1:hover{color:#ee9a00!important;fill:#ee9a00!important} .bg_hover1:hover{background:#ee9a00!important;border-color: #ee9a00!important} .bd_hover1:hover{border-color:#ee9a00!important} .border1{border-color: #ee9a00!important} .bg1.active{background:#ee9a00!important;border-color: #ee9a00!important}
+.background2{background: #000000!important;border-color: #000000!important}
+.hover3:hover,.hover3.active,.hover3.current,.hover3.reported{color:#000000!important;fill:#000000!important} .bg_hover3:hover,.bg_hover3.active,.bg_hover3.current{background:#000000!important;border-color: #000000!important} .bd_hover3:hover,.bd_hover3.active,.bd_hover3.current{border-color:#000000!important} .bg3.active{background:#000000!important;border-color: #000000!important}
+.color4{color: #48AF1A!important;fill: #48AF1A!important}
+.color5{color: #000000!important;fill: #000000!important}
+</style>
+
+
+
+
+
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJSCF3Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<main id="page">
+
+
+<header id="header">
+<div class="header-container">
+
+
+  <div class="header-banner">
+          <div class="container">
+              <div class="inner"></div>
+          </div>
+        </div>
+
+
+
+  <nav class="header-nav">
+    <div class="topnav">
+            <div class="container">
+              <div class="inner"></div>
+            </div>
+          </div>
+    <div class="bottomnav">
+              <div class="container">
+              <div class="inner"><!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row ApRow  has-bg bg-boxed" style="background: no-repeat;" data-bg_data=" no-repeat">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12 text-center text-uppercase top-text ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApGeneral -->
+<div class="block ApHtml">
+	                    <div class="block_content"><p style="font-weight: bold;" data-mce-style="font-weight: bold;">LIvraison gratuite �&nbsp; partir de 60€</p></div>
+    	</div>
+    </div>            </div>
+</div>
+              </div>
+          </div>
+  </nav>
+
+
+
+  <div class="header-top">
+              <div class="container">
+              <div class="inner"><!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row box-top ApRow  has-bg bg-boxed" style="background: no-repeat;" data-bg_data=" no-repeat">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-5 col-lg-5 col-md-3 col-sm-4 col-xs-4 col-sp-4 info-left ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApSlideShow -->
+<div id="memgamenu-form_7085344205588512" class="ApMegamenu">
+			    
+                <nav data-megamenu-id="7085344205588512" class="leo-megamenu cavas_menu navbar navbar-default enable-canvas " role="navigation">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                    <button type="button" class="navbar-toggler hidden-lg-up" data-toggle="collapse" data-target=".megamenu-off-canvas-7085344205588512">
+                                            <span class="sr-only">Basculer la navigation</span>
+                                            ☰
+                                            <!--
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            -->
+                                    </button>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                                        <div class="leo-top-menu collapse navbar-toggleable-md megamenu-off-canvas megamenu-off-canvas-7085344205588512"><ul class="nav navbar-nav megamenu horizontal"><li data-menu-type="url" class="nav-item parent  dropdown aligned-fullwidth  ">
+    <a class="nav-link dropdown-toggle has-category" data-toggle="dropdown" href="https://rpparfums.fr/fr/#" target="_self">
+
+                    
+                    <span class="menu-title">Produits</span>
+                                        
+            </a>
+        <b class="caret"></b>
+            <div class="dropdown-sub dropdown-menu">
+            <div class="dropdown-menu-inner">
+                                    <div class="row">
+                                                    <div class="mega-col col-md-2">
+                                <div class="mega-col-inner ">
+                                    <div class="leo-widget" data-id_widget="1713509980">
+    <div class="widget-subcategories">
+                <div class="widget-inner">
+                            <div class="menu-title">
+                    <a href="https://rpparfums.fr/fr/159-parfums" title="Parfums" class="img">
+                            Parfums 
+                    </a>
+                </div>
+                <ul>
+                                    <li class="clearfix ">
+                        <a href="https://rpparfums.fr/fr/140-parfums-mixtes" title="Parfums Mixtes" class="img">
+                                Parfums Mixtes 
+                        </a>
+                                            </li>
+                                    <li class="clearfix ">
+                        <a href="https://rpparfums.fr/fr/157-parfums-homme" title="Parfums Homme" class="img">
+                                Parfums Homme 
+                        </a>
+                                            </li>
+                                    <li class="clearfix ">
+                        <a href="https://rpparfums.fr/fr/158-parfums-femme" title="Parfums Femme" class="img">
+                                Parfums Femme 
+                        </a>
+                                            </li>
+                                </ul>
+                    </div>
+    </div>
+ 
+</div>                                </div>
+                            </div>
+                                                    <div class="mega-col col-md-2">
+                                <div class="mega-col-inner newdropdow">
+                                    <div class="leo-widget" data-id_widget="1670402560">
+    <div class="widget-links">
+		<div class="menu-title">
+		CORPS
+	</div>
+		<div class="widget-inner">	
+		<div id="tabs1190625004" class="panel-group">
+			<ul class="nav-links">
+				  
+					<li><a href="https://rpparfums.fr/fr/143-brumes">Brumes</a></li>
+				  
+					<li><a href="https://rpparfums.fr/fr/151-deodorants">Déodorants</a></li>
+				  
+					<li><a href="https://rpparfums.fr/fr/153-galets-de-bain">Galets De Bain</a></li>
+				  
+					<li><a href="https://rpparfums.fr/fr/155-gel-douche">Gel Douche</a></li>
+				  
+					<li><a href="https://rpparfums.fr/fr/156-coffrets">Coffrets</a></li>
+							</ul>
+		</div>
+	</div>
+    </div>
+</div>                                </div>
+                            </div>
+                                                    <div class="mega-col col-md-2">
+                                <div class="mega-col-inner newdropdow">
+                                    <div class="leo-widget" data-id_widget="1670402629">
+    <div class="widget-links">
+		<div class="menu-title">
+		MAISON
+	</div>
+		<div class="widget-inner">	
+		<div id="tabs46687364" class="panel-group">
+			<ul class="nav-links">
+				  
+					<li><a href="https://rpparfums.fr/fr/142-sprays-textile">Sprays textiles</a></li>
+				  
+					<li><a href="https://rpparfums.fr/fr/152-diffuseur-maison">Diffuseurs maison</a></li>
+				  
+					<li><a href="https://rpparfums.fr/fr/150-diffuseur-voiture">Diffuseurs voiture</a></li>
+							</ul>
+		</div>
+	</div>
+    </div>
+</div>                                </div>
+                            </div>
+                                                    <div class="mega-col col-md-2">
+                                <div class="mega-col-inner newdropdow">
+                                    <div class="leo-widget" data-id_widget="1670402678">
+    <div class="widget-links">
+		<div class="menu-title">
+		ACCESSOIRES
+	</div>
+		<div class="widget-inner">	
+		<div id="tabs1947328557" class="panel-group">
+			<ul class="nav-links">
+				  
+					<li><a href="https://rpparfums.fr/fr/145-accessoires">Trousses</a></li>
+							</ul>
+		</div>
+	</div>
+    </div>
+</div>                                </div>
+                            </div>
+                                                    <div class="mega-col col-md-4">
+                                <div class="mega-col-inner ">
+                                    <div class="leo-widget" data-id_widget="1670402786">
+            <div class="widget-html">
+                        <div class="widget-inner">
+                    <p><img src="images/banner-menu-1.jpg" alt=""></p>            </div>
+        </div>
+        </div>                                </div>
+                            </div>
+                                            </div>
+                            </div>
+        </div>
+    </li>
+    <li data-menu-type="cms" class="nav-item  ">
+        <a class="nav-link has-category" href="https://rpparfums.fr/fr/content/14-nos-boutiques-rp-parfums" target="_self">
+                            
+                            <span class="menu-title">Nos Boutiques</span>
+                                                        </a>
+    </li>
+    <li data-menu-type="cms" class="nav-item  ">
+        <a class="nav-link has-category" href="https://rpparfums.fr/fr/content/15--a-propos" target="_self">
+                            
+                            <span class="menu-title">A Propos</span>
+                                                        </a>
+    </li>
+</ul></div>
+            </nav>
+<script type="text/javascript">
+	list_menu_tmp.id = '7085344205588512';
+	list_menu_tmp.type = 'horizontal';
+	list_menu_tmp.show_cavas =1;
+	list_menu_tmp.list_tab = list_tab;
+	list_menu.push(list_menu_tmp);
+	list_menu_tmp = {};	
+	list_tab = {};
+</script>
+    
+	</div>
+
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-sp-4 text-center  ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApGenCode -->
+
+	<div class="logo">    <a href="https://rpparfums.fr/"><!--?xml version="1.0" encoding="UTF-8"?--><svg version="1.1" id="svg2" viewBox="0 0 377.95334 377.95334" sodipodi:docname="RP_logo.ai" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">  <defs id="defs6">    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">      <path d="M 0,283.465 H 283.465 V 0 H 0 Z" id="path14"></path>    </clipPath>  </defs>  <sodipodi:namedview id="namedview4" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"></sodipodi:namedview>  <g id="g8" inkscape:groupmode="layer" inkscape:label="RP_logo" transform="matrix(1.3333333,0,0,-1.3333333,0,377.95333)">    <g id="g10">      <g id="g12" clip-path="url(#clipPath16)">        <g id="g18" transform="translate(58.9638,74.7249)">          <path d="m 0,0 c 1.812,-0.346 3.413,-0.602 4.815,-0.768 1.402,-0.18 2.593,-0.256 3.585,-0.256 3.554,0 6.614,1.37 9.194,4.123 2.581,2.74 3.868,6.3 3.868,10.679 0,2.997 -0.615,5.788 -1.844,8.375 -1.23,2.574 -2.971,4.508 -5.225,5.788 -2.254,1.281 -4.815,1.921 -7.683,1.921 -1.742,0 -3.976,-0.333 -6.71,-0.973 z m 0,-2.92 v -20.232 c 0,-4.379 0.48,-7.094 1.434,-8.144 1.3,-1.511 3.259,-2.254 5.891,-2.254 h 2.663 v -1.895 h -29.759 v 1.895 h 2.612 c 2.939,0 5.039,0.948 6.3,2.869 0.685,1.05 1.025,3.559 1.025,7.529 v 44.87 c 0,4.366 -0.461,7.081 -1.383,8.144 -1.332,1.498 -3.311,2.254 -5.942,2.254 h -2.612 v 1.895 H 5.686 c 6.217,0 11.114,-0.64 14.7,-1.921 3.586,-1.28 6.608,-3.445 9.066,-6.479 2.459,-3.048 3.688,-6.646 3.688,-10.808 0,-5.673 -1.869,-10.283 -5.609,-13.83 -3.739,-3.56 -9.021,-5.327 -15.853,-5.327 -1.671,0 -3.483,0.115 -5.429,0.359 C 4.303,-3.765 2.222,-3.406 0,-2.92" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path20"></path>        </g>        <g id="g22" transform="translate(125.6538,49.3704)">          <path d="m 0,0 v 17.876 c -5.154,-2.049 -8.484,-3.508 -9.988,-4.354 -2.696,-1.511 -4.629,-3.073 -5.788,-4.712 -1.159,-1.639 -1.742,-3.432 -1.742,-5.378 0,-2.459 0.737,-4.508 2.203,-6.121 1.466,-1.626 3.156,-2.433 5.071,-2.433 2.593,0 6.012,1.703 10.244,5.122 m 0,-3.329 c -4.815,-3.727 -7.837,-5.878 -9.066,-6.454 -1.844,-0.858 -3.81,-1.281 -5.891,-1.281 -3.246,0 -5.916,1.101 -8.016,3.33 -2.1,2.215 -3.15,5.135 -3.15,8.758 0,2.28 0.512,4.265 1.537,5.942 1.402,2.318 3.835,4.508 7.299,6.556 3.464,2.049 9.226,4.533 17.287,7.479 v 1.844 c 0,4.674 -0.743,7.888 -2.228,9.629 -1.486,1.742 -3.643,2.613 -6.48,2.613 -2.151,0 -3.86,-0.59 -5.122,-1.742 -1.299,-1.165 -1.946,-2.497 -1.946,-3.995 l 0.102,-2.971 c 0,-1.575 -0.403,-2.792 -1.203,-3.637 -0.801,-0.858 -1.851,-1.28 -3.15,-1.28 -1.262,0 -2.299,0.435 -3.099,1.331 -0.801,0.884 -1.204,2.1 -1.204,3.637 0,2.933 1.505,5.634 4.507,8.093 3.003,2.459 7.223,3.688 12.652,3.688 4.168,0 7.581,-0.704 10.244,-2.1 C 5.09,35.048 6.576,33.396 7.53,31.142 8.144,29.67 8.451,26.661 8.451,22.128 V 6.198 c 0,-4.482 0.084,-7.222 0.257,-8.221 0.172,-1.012 0.454,-1.691 0.845,-2.023 0.39,-0.346 0.845,-0.513 1.357,-0.513 0.544,0 1.025,0.116 1.434,0.359 0.717,0.435 2.1,1.69 4.149,3.739 v -2.868 c -3.822,-5.122 -7.478,-7.684 -10.961,-7.684 -1.671,0 -3.003,0.577 -3.995,1.742 C 0.544,-8.119 0.032,-6.134 0,-3.329" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path24"></path>        </g>        <g id="g26" transform="translate(159.3572,87.5814)">          <path d="M 0,0 V -10.552 C 3.931,-3.521 7.965,0 12.088,0 c 1.883,0 3.432,-0.576 4.661,-1.716 1.23,-1.152 1.844,-2.471 1.844,-3.97 0,-1.331 -0.435,-2.458 -1.331,-3.38 -0.884,-0.922 -1.947,-1.383 -3.176,-1.383 -1.191,0 -2.536,0.589 -4.021,1.767 -1.485,1.178 -2.587,1.767 -3.304,1.767 -0.614,0 -1.28,-0.346 -1.997,-1.024 C 3.227,-9.348 1.639,-11.653 0,-14.854 V -37.34 c 0,-2.6 0.327,-4.559 0.973,-5.891 0.448,-0.922 1.23,-1.69 2.356,-2.305 1.127,-0.614 2.754,-0.922 4.866,-0.922 v -1.844 h -24.022 v 1.844 c 2.388,0 4.168,0.372 5.327,1.127 0.851,0.538 1.453,1.409 1.792,2.613 0.173,0.576 0.257,2.228 0.257,4.968 v 18.184 c 0,5.455 -0.109,8.707 -0.333,9.757 -0.224,1.037 -0.634,1.793 -1.23,2.279 -0.595,0.474 -1.338,0.718 -2.228,0.718 -1.056,0 -2.253,-0.257 -3.585,-0.769 L -16.339,-5.737 -2.151,0 Z" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path28"></path>        </g>        <g id="g30" transform="translate(192.4974,112.1164)">          <path d="M 0,0 C 1.434,0 2.663,-0.512 3.662,-1.511 4.674,-2.523 5.173,-3.739 5.173,-5.173 5.173,-6.608 4.674,-7.837 3.662,-8.861 2.663,-9.886 1.434,-10.398 0,-10.398 c -1.434,0 -2.663,0.512 -3.688,1.537 -1.024,1.024 -1.537,2.253 -1.537,3.688 0,1.434 0.513,2.65 1.511,3.662 C -2.702,-0.512 -1.46,0 0,0 m 4.251,-24.535 v -37.699 c 0,-2.945 0.218,-4.891 0.641,-5.865 0.435,-0.973 1.062,-1.703 1.895,-2.176 0.845,-0.487 2.369,-0.718 4.584,-0.718 v -1.844 h -22.793 v 1.844 c 2.292,0 3.828,0.218 4.61,0.666 0.794,0.436 1.408,1.178 1.869,2.203 0.461,1.024 0.692,2.983 0.692,5.89 v 18.081 c 0,5.084 -0.154,8.375 -0.461,9.886 -0.231,1.088 -0.615,1.844 -1.127,2.279 -0.512,0.423 -1.204,0.641 -2.1,0.641 -0.948,0 -2.113,-0.256 -3.483,-0.769 l -0.717,1.844 14.137,5.737 z" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path32"></path>        </g>        <g id="g34" transform="translate(240.0307,87.5814)">          <path d="m 0,0 v -15.981 h -1.69 c -1.294,5.02 -2.958,8.426 -4.994,10.244 -2.024,1.806 -4.61,2.715 -7.76,2.715 -2.382,0 -4.316,-0.64 -5.788,-1.895 -1.46,-1.268 -2.203,-2.664 -2.203,-4.2 0,-1.921 0.551,-3.56 1.639,-4.918 1.063,-1.408 3.214,-2.894 6.454,-4.456 l 7.478,-3.637 c 6.941,-3.38 10.398,-7.836 10.398,-13.368 0,-4.277 -1.613,-7.709 -4.84,-10.321 -3.227,-2.613 -6.838,-3.919 -10.833,-3.919 -2.869,0 -6.147,0.512 -9.835,1.537 -1.127,0.333 -2.049,0.512 -2.766,0.512 -0.781,0 -1.396,-0.448 -1.844,-1.332 h -1.69 v 16.75 h 1.69 c 0.961,-4.79 2.792,-8.388 5.481,-10.808 2.702,-2.433 5.724,-3.637 9.066,-3.637 2.356,0 4.277,0.692 5.762,2.075 1.486,1.383 2.229,3.047 2.229,4.994 0,2.356 -0.82,4.328 -2.485,5.941 -1.652,1.601 -4.955,3.637 -9.911,6.096 -4.943,2.458 -8.195,4.674 -9.732,6.659 -1.537,1.946 -2.305,4.405 -2.305,7.375 0,3.855 1.332,7.082 3.97,9.681 2.65,2.587 6.069,3.893 10.27,3.893 1.843,0 4.084,-0.397 6.709,-1.178 1.742,-0.512 2.907,-0.768 3.484,-0.768 0.55,0 0.973,0.115 1.28,0.358 C -2.459,-1.357 -2.1,-0.82 -1.69,0 Z" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path36"></path>        </g>        <g id="g38" transform="translate(194.1612,210.3998)">          <path d="m 0,0 c -2.967,-3.164 -6.494,-4.745 -10.58,-4.745 -1.14,0 -2.515,0.098 -4.126,0.295 -1.612,0.196 -3.458,0.491 -5.54,0.884 v 33.243 c 3.143,0.746 5.717,1.12 7.721,1.12 3.301,0 6.248,-0.737 8.841,-2.21 C -1.09,27.113 0.914,24.893 2.329,21.926 3.743,18.959 4.45,15.747 4.45,12.289 4.45,7.259 2.967,3.163 0,0 m -97.401,-3.331 c -0.354,0 -0.806,0.01 -1.356,0.03 -0.55,0.02 -1.199,0.03 -1.945,0.03 v 33.243 c 3.89,0.746 6.975,1.119 9.254,1.119 5.147,0 9.283,-1.561 12.407,-4.685 3.124,-3.124 4.686,-7.182 4.686,-12.172 0,-5.108 -1.936,-9.313 -5.806,-12.613 -3.871,-3.301 -9.617,-4.952 -17.24,-4.952 M 13.645,25.905 c -2.829,3.497 -6.307,5.983 -10.433,7.456 -4.126,1.473 -9.764,2.21 -16.916,2.21 H -42.998 V 33.39 h 3.006 c 3.025,0 5.305,-0.864 6.837,-2.593 1.061,-1.218 1.592,-4.342 1.592,-9.372 v -51.633 c 0,-4.559 -0.393,-7.447 -1.179,-8.664 -1.454,-2.201 -3.871,-3.301 -7.25,-3.301 h -3.006 -0.591 c -0.234,0 -0.472,0.012 -0.705,0.04 -4.2,0.492 -7.619,1.578 -10.256,3.261 -2.712,1.728 -5.953,5.225 -9.726,10.491 L -80.78,-5.452 c 6.72,1.493 11.68,4.046 14.883,7.662 3.203,3.615 4.804,7.878 4.804,12.791 0,4.597 -1.406,8.555 -4.214,11.876 -2.81,3.32 -6.229,5.6 -10.256,6.837 -4.029,1.238 -10.286,1.857 -18.773,1.857 h -29.118 V 33.39 h 3.007 c 3.025,0 5.305,-0.864 6.837,-2.593 1.099,-1.218 1.65,-4.342 1.65,-9.372 v -51.633 c 0,-4.559 -0.412,-7.447 -1.238,-8.664 -1.454,-2.201 -3.87,-3.301 -7.249,-3.301 h -3.007 v -2.181 h 34.246 v 2.181 h -3.124 c -2.987,0 -5.227,0.864 -6.72,2.593 -1.1,1.218 -1.65,4.342 -1.65,9.372 v 23.223 c 0.628,-0.039 1.238,-0.069 1.827,-0.088 0.59,-0.02 1.139,-0.03 1.651,-0.03 1.257,0 2.888,0.039 4.892,0.118 l 27.054,-37.369 h 21.337 0.943 34.245 v 2.181 h -3.065 c -3.026,0 -5.285,0.864 -6.778,2.593 -1.1,1.218 -1.65,4.342 -1.65,9.372 v 23.282 c 2.554,-0.551 4.951,-0.963 7.19,-1.237 2.24,-0.276 4.323,-0.413 6.248,-0.413 7.859,0 13.94,2.042 18.243,6.13 4.302,4.086 6.454,9.391 6.454,15.914 0,4.794 -1.415,8.939 -4.244,12.437" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path40"></path>        </g>        <g id="g42" transform="translate(224.9383,129.6153)">          <path d="m 0,0 h -167.119 c -9.277,2.017 -18.554,4.034 -27.831,6.722 9.277,2.824 18.554,4.841 27.831,6.857 l 27.831,-0.134 H 0 C 9.277,11.294 18.554,9.546 27.831,6.722 18.554,4.034 9.277,2.286 0,0" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path44"></path>        </g>      </g>    </g>  </g></svg></a></div>
+
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-5 col-lg-5 col-md-6 col-sm-4 col-xs-4 col-sp-4 mobile-no-padding  right-info-mobile ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+                                <a href="javascript:void(0)" class="leo-quicklogin-nav leo-quicklogin" data-enable-sociallogin="" data-type="slidebar_right" data-layout="login" title="Connexion rapide" rel="nofollow">
+                <i class="material-icons"></i>
+                <span class="hidden-sm-down">Connexion rapide</span>
+            </a>
+            <!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+<div id="_desktop_cart">
+  <div class="blockcart cart-preview inactive" data-refresh-url="//rpparfums.fr/fr/module/ps_shoppingcart/ajax">
+    <div class="header">
+              <span class="hidden-sm-down">Panier</span><i class="icon-icon-panier"></i>
+        (<span class="cart-products-count">0</span>)
+          </div>
+  </div>
+</div>
+<!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+
+
+<!-- Block search module -->
+<div id="leo_search_block_top" class="block exclusive">
+	<h4 class="title_block">Search here...</h4>
+		<form method="get" action="https://rpparfums.fr/fr/index.php?controller=productsearch" id="leosearchtopbox" data-label-suggestion="Suggestion" data-search-for="Search for" data-in-category="in category" data-products-for="Products For" data-label-products="Products" data-view-all="View all">
+		<input type="hidden" name="fc" value="module">
+		<input type="hidden" name="module" value="leoproductsearch">
+		<input type="hidden" name="controller" value="productsearch">
+		<input type="hidden" name="txt_not_found" value="Aucun produit trouvé">
+        <input type="hidden" name="leoproductsearch_static_token" value="79bdd040e907713ee8726de3d0821c27">
+		    	<label>Recherche de produits:</label>
+		<div class="block_content clearfix leoproductsearch-content">
+						<div class="leoproductsearch-result">
+				<div class="leoproductsearch-loading cssload-speeding-wheel"></div>
+				<input class="search_query form-control grey" type="text" id="leo_search_query_top" name="search_query" data-content="" value="" placeholder="Chercher">
+				<div class="ac_results lps_results"></div>
+			</div>
+			<button type="submit" id="leo_search_top_button" class="btn btn-default button button-small"><span><i class="material-icons search">search</i></span></button> 
+		</div>
+	</form>
+</div>
+<script type="text/javascript">
+	var blocksearch_type = 'top';
+</script>
+<!-- /Block search module -->
+
+    </div>            </div>
+</div>
+                  </div>
+          </div>
+  
+
+</div>
+</header>
+
+
+<aside id="notifications">
+  <div class="container">
+    
+    
+    
+      </div>
+</aside>
+
+<section id="wrapper">
+
+
+
+ 
+<nav data-depth="1" class="breadcrumb hidden-sm-down">
+  <ol>
+    
+               
+                      <li>
+              <span>Accueil</span>
+            </li>
+                  
+          
+  </ol>
+</nav>
+
+<div class="row">
+
+
+  <div id="content-wrapper" class="col-lg-12 col-xs-12 js-content-wrapper">
+    
+    
+
+  <section id="main">
+
+    
+      
+    
+
+    
+      <section id="content" class="page-home">
+        
+
+        
+          
+            <!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row ApRow  " style="">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12  ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApSlideShow -->
+<div id="slideshow-form_22340516932528972" class="ApSlideShow">
+			<div class="bannercontainer banner-fullwidth" style="padding: 0px;margin: 0px;">
+	<div class="iview iview-group-666e1e35a17b6-7">
+														
+					<!-- SLIDE IMAGE BEGIN -->
+					<div class="slide_config data-link" data-leo_image="/themes/rpparfums/assets/img/modules/leoslideshow/Banniere-RP-Parfum-pères.jpg" data-link="https://rpparfums.fr/fr/156-coffrets" data-target="_self" data-leo_pausetime="5000" data-leo_thumbnail="/themes/rpparfums/assets/img/modules/leoslideshow/Banniere-RP-Parfum-pères.jpg" data-leo_background="image">
+						
+						
+																									
+				</div><!-- SLIDE IMAGE END -->
+				
+												
+					<!-- SLIDE IMAGE BEGIN -->
+					<div class="slide_config " data-leo_image="/themes/rpparfums/assets/img/modules/leoslideshow/RPbannier-12.jpg" data-leo_pausetime="5000" data-leo_thumbnail="/themes/rpparfums/assets/img/modules/leoslideshow/RPbannier-12.jpg" data-leo_background="image">
+						
+						
+																									
+				</div><!-- SLIDE IMAGE END -->
+				
+						</div>
+</div>
+
+<script type="text/javascript">
+        ap_list_functions.push(function(){
+
+	jQuery(".iview-group-666e1e35a17b6-7").iView({
+		// COMMON
+		pauseTime:9000, // delay
+		startSlide:0,
+		autoAdvance: 0,	// enable timer thá»�i gian auto next slide
+		pauseOnHover: 1,
+		randomStart: 0, // Ramdom slide when start
+
+		// TIMER
+		timer: "360Bar",
+		timerPosition: "top-right", // Top-right, top left ....
+		timerX: 10,
+		timerY: 10,
+		timerOpacity: 0.5,
+		timerBg: "#000",
+		timerColor: "#EEE",
+		timerDiameter: 30,
+		timerPadding: 4,
+		timerStroke: 3,
+		timerBarStroke: 1,
+		timerBarStrokeColor: "#EEE",
+		timerBarStrokeStyle: "solid",
+		playLabel: "Jouer",
+		pauseLabel: "Pause",
+		closeLabel: "Fermer", // Muli language
+
+		// NAVIGATOR controlNav
+		controlNav: 0, // true : enable navigate - default:'false'
+		keyboardNav: 0, // true : enable keybroad
+		controlNavThumbs: 0, // true show thumbnail, false show number ( bullet )
+		controlNavTooltip: 0, // true : hover to bullet show thumnail
+		tooltipX: 5,
+		tooltipY: -5,
+		controlNavHoverOpacity: 0.6, // opacity navigator
+
+		// DIRECTION
+		controlNavNextPrev: false, // false dont show direction at navigator
+		directionNav: 0, // true  show direction at image ( in this case : enable direction )
+		directionNavHoverOpacity: 0.6, // direction opacity at image
+		nextLabel: "Prochain",				// Muli language
+		previousLabel: "précédent", // Muli language
+
+		// ANIMATION 
+		fx: 'random', // Animation
+		animationSpeed: 500, // time to change slide
+//		strips: 20,
+		strips: 1, // set value is 1 -> fix animation full background
+		blockCols: 10, // number of columns
+		blockRows: 5, // number of rows
+
+		captionSpeed: 500, // speed to show caption
+		captionOpacity: 1, // caption opacity
+		captionEasing: 'easeInOutSine', // caption transition easing effect, use JQuery Easings effect
+		customWidth: 1801,
+		customHtmlBullet: false,
+		rtl: false,
+		height:801,
+		timer_show : 2,
+
+		//onBeforeChange: function(){}, // Triggers before a slide transition
+		//onAfterChange: function(){}, // Triggers after a slide transition
+		//onSlideshowEnd: function(){}, // Triggers after all slides have been shown
+		//onLastSlide: function(){}, // Triggers when last slide is shown
+		//onPause: function(){}, // Triggers when slider has paused
+		//onPlay: function(){} // Triggers when slider has played
+
+		onAfterLoad: function() 
+		{
+			// THUMBNAIL
+						
+			// BULLET
+						
+			// Display timer
+								$('.iview-group-666e1e35a17b6-7 .iview-timer').hide();
+					},
+
+	});
+
+	$(".img_disable_drag").bind('dragstart', function() {
+		return false;
+	});
+
+
+// Fix : Slide link, image cant swipe
+	// step 1
+	var link_event = 'click';
+
+	// step 3
+	$(".iview-group-666e1e35a17b6-7 .slide_config").on("click",function(){
+		
+		if(link_event !== 'click'){
+			link_event = 'click';
+			return;
+		}
+
+		if($(this).data('link') != undefined && $(this).data('link') != '') {
+			window.open($(this).data('link'),$(this).data('target'));
+		}
+		
+	});
+
+	// step 2
+	$(".iview-group-666e1e35a17b6-7 .slide_config").on('swipe',function(){
+		link_event = 'swiped';	// do not click event
+	});
+	
+});
+	
+	 
+</script>
+	</div>
+
+    </div>            </div>
+<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+<div class="wrapper">
+
+<div class="container">
+    <div class="row cw-button-arrow products_block-home ApRow  has-bg bg-boxed" style="background: no-repeat;margin-top: 60px;padding-bottom: 50px;" data-bg_data=" no-repeat">
+                        <h4 class="title_block title-ap-group">Inspirations &amp; senteurs</h4>
+                            <div class="sub-title-widget sub-title-ap-group">L’univers des créations de RP PARFUMS est celui des émotions. Aussi féminines que masculines, nos compositions font surgir de nouvelles îles parfumées</div>
+                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12  ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApProductCarousel -->
+    <div class="block products_block exclusive appagebuilder ApProductCarousel">
+                                <div class="block_content">	
+			                                                        <!-- @file modules\appagebuilder\views\templates\hook\ApProductCarousel -->
+
+			<div class="slick-row">
+			<div class="timeline-wrapper clearfix prepare" data-item="3" data-xl="3" data-lg="2" data-md="2" data-sm="1" data-m="1">
+							
+					<div class="timeline-parent">
+													<div class="timeline-item">
+								<div class="animated-background">					
+									<div class="background-masker content-top"></div>							
+									<div class="background-masker content-second-line"></div>							
+									<div class="background-masker content-third-line"></div>							
+									<div class="background-masker content-fourth-line"></div>
+								</div>
+							</div>
+											</div>
+							
+					<div class="timeline-parent">
+													<div class="timeline-item">
+								<div class="animated-background">					
+									<div class="background-masker content-top"></div>							
+									<div class="background-masker content-second-line"></div>							
+									<div class="background-masker content-third-line"></div>							
+									<div class="background-masker content-fourth-line"></div>
+								</div>
+							</div>
+											</div>
+							
+					<div class="timeline-parent">
+													<div class="timeline-item">
+								<div class="animated-background">					
+									<div class="background-masker content-top"></div>							
+									<div class="background-masker content-second-line"></div>							
+									<div class="background-masker content-third-line"></div>							
+									<div class="background-masker content-fourth-line"></div>
+								</div>
+							</div>
+											</div>
+							</div>
+			<div class="list-product-slick-carousel slick-slider slick-loading product-list-new" id="form_17421560021312635">		
+															<div class="slick-slide  first">
+							<div class="item">
+		                    	<article class="product-miniature js-product-miniature" data-id-product="324" data-id-product-attribute="245" itemscope="" itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+    <div class="product-image">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+
+    	<a href="https://rpparfums.fr/fr/diffuseur-voiture/324-245-figue-delicieuse.html#/19-contenance-10ml" class="thumbnail product-thumbnail">
+	  <img class="img-fluid" src="images/figue-delicieuse.jpg" alt="" data-full-size-image-url="https://rpparfums.fr/874-large_default/figue-delicieuse.jpg">
+	  
+	</a>
+    
+
+<div class="attribute-name">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+  <h4 class="h3 product-title"><a href="https://rpparfums.fr/fr/diffuseur-voiture/324-245-figue-delicieuse.html#/19-contenance-10ml">Figue délicieuse</a></h4>
+
+
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+<div class="addToCartFormWrapper" data-product-id="324">
+	<form action="https://rpparfums.fr/fr/panier" method="post" class="addToCartForm">
+            <div class="variantsProductWrapper">
+                <div class="variants-product">
+                                                                        <div class="clearfix product-variants-item">
+                                                                <span class="control-label">Contenance</span>
+                                                                                                  <select class="form-control form-control-select" id="group_1" data-product-attribute="1" name="group[1]">
+                                                                          <option value="19" title="10ml" selected="selected">10ml</option>
+                                                                      </select>
+                                                              
+                              
+                            </div>
+                                                            </div>
+            </div>
+            
+	</form>
+</div>
+        
+        
+        
+</div><div class="price-detail">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+      <div class="product-price-and-shipping ">
+      
+
+      
+      
+      <span class="sr-only">Prix</span>
+      <span class="price">
+        <span content="EUR"></span><span content="6.9">6,90�&nbsp;€</span>
+      </span>
+      
+      
+
+      <span style="color: #d0121a;"><b>2 diffuseurs <br>voiture �&nbsp; 10€</b></span>
+	  
+	  	  
+    </div>
+  
+<p><a class="detail-product" href="https://rpparfums.fr/fr/diffuseur-voiture/324-245-figue-delicieuse.html#/19-contenance-10ml">Découvrir &gt; </a></p></div></div>
+    <div class="product-meta"></div>
+  </div>
+</article>
+		                   	</div>
+						</div>
+	                															<div class="slick-slide ">
+							<div class="item">
+		                    	<article class="product-miniature js-product-miniature" data-id-product="331" data-id-product-attribute="264" itemscope="" itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+    <div class="product-image">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+
+    	<a href="https://rpparfums.fr/fr/deodorants/331-264-so-oud.html#/20-contenance-150ml" class="thumbnail product-thumbnail">
+	  <img class="img-fluid" src="images/so-oud.jpg" alt="" data-full-size-image-url="https://rpparfums.fr/913-large_default/so-oud.jpg">
+	  
+	</a>
+    
+
+<div class="attribute-name">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+  <h4 class="h3 product-title"><a href="https://rpparfums.fr/fr/deodorants/331-264-so-oud.html#/20-contenance-150ml">So Oud</a></h4>
+
+
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+<div class="addToCartFormWrapper" data-product-id="331">
+	<form action="https://rpparfums.fr/fr/panier" method="post" class="addToCartForm">
+            <div class="variantsProductWrapper">
+                <div class="variants-product">
+                                                                        <div class="clearfix product-variants-item">
+                                                                <span class="control-label">Contenance</span>
+                                                                                                  <select class="form-control form-control-select" id="group_1" data-product-attribute="1" name="group[1]">
+                                                                          <option value="20" title="150ml" selected="selected">150ml</option>
+                                                                      </select>
+                                                              
+                              
+                            </div>
+                                                            </div>
+            </div>
+            
+	</form>
+</div>
+        
+        
+        
+</div><div class="price-detail">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+      <div class="product-price-and-shipping ">
+      
+
+      
+      
+      <span class="sr-only">Prix</span>
+      <span class="price">
+        <span content="EUR"></span><span content="4.9">4,90�&nbsp;€</span>
+      </span>
+      
+      
+
+      
+	  
+	  	  
+    </div>
+  
+<p><a class="detail-product" href="https://rpparfums.fr/fr/deodorants/331-264-so-oud.html#/20-contenance-150ml">Découvrir &gt; </a></p></div></div>
+    <div class="product-meta"></div>
+  </div>
+</article>
+		                   	</div>
+						</div>
+	                															<div class="slick-slide ">
+							<div class="item">
+		                    	<article class="product-miniature js-product-miniature" data-id-product="228" data-id-product-attribute="223" itemscope="" itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+    <div class="product-image">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+
+    	<a href="https://rpparfums.fr/fr/brumes/228-223-bella-3760324580929.html#/4-contenance-250ml" class="thumbnail product-thumbnail">
+	  <img class="img-fluid" src="images/bella.jpg" alt="" data-full-size-image-url="https://rpparfums.fr/784-large_default/bella.jpg">
+	  
+	</a>
+    
+
+<div class="attribute-name">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+  <h4 class="h3 product-title"><a href="https://rpparfums.fr/fr/brumes/228-223-bella-3760324580929.html#/4-contenance-250ml">Bella</a></h4>
+
+
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+<div class="addToCartFormWrapper" data-product-id="228">
+	<form action="https://rpparfums.fr/fr/panier" method="post" class="addToCartForm">
+            <div class="variantsProductWrapper">
+                <div class="variants-product">
+                                                                        <div class="clearfix product-variants-item">
+                                                                <span class="control-label">Contenance</span>
+                                                                                                  <select class="form-control form-control-select" id="group_1" data-product-attribute="1" name="group[1]">
+                                                                          <option value="4" title="250ml" selected="selected">250ml</option>
+                                                                      </select>
+                                                              
+                              
+                            </div>
+                                                            </div>
+            </div>
+            
+	</form>
+</div>
+        
+        
+        
+</div><div class="price-detail">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+      <div class="product-price-and-shipping ">
+      
+
+      
+      
+      <span class="sr-only">Prix</span>
+      <span class="price">
+        <span content="EUR"></span><span content="11.95">11,95�&nbsp;€</span>
+      </span>
+      
+      
+
+      <span style="color: #d0121a;"><b>3 Brumes 30€</b></span>
+	  
+	  	  
+    </div>
+  
+<p><a class="detail-product" href="https://rpparfums.fr/fr/brumes/228-223-bella-3760324580929.html#/4-contenance-250ml">Découvrir &gt; </a></p></div></div>
+    <div class="product-meta"></div>
+  </div>
+</article>
+		                   	</div>
+						</div>
+	                															<div class="slick-slide ">
+							<div class="item">
+		                    	<article class="product-miniature js-product-miniature" data-id-product="357" data-id-product-attribute="341" itemscope="" itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+    <div class="product-image">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+
+    	<a href="https://rpparfums.fr/fr/gel-douche/357-341-so-oud-3760324583111.html#/21-contenance-200ml" class="thumbnail product-thumbnail">
+	  <img class="img-fluid" src="images/so-oud_1.jpg" alt="" data-full-size-image-url="https://rpparfums.fr/1092-large_default/so-oud.jpg">
+	  
+	</a>
+    
+
+<div class="attribute-name">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+  <h4 class="h3 product-title"><a href="https://rpparfums.fr/fr/gel-douche/357-341-so-oud-3760324583111.html#/21-contenance-200ml">So Oud</a></h4>
+
+
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+<div class="addToCartFormWrapper" data-product-id="357">
+	<form action="https://rpparfums.fr/fr/panier" method="post" class="addToCartForm">
+            <div class="variantsProductWrapper">
+                <div class="variants-product">
+                                                                        <div class="clearfix product-variants-item">
+                                                                <span class="control-label">Contenance</span>
+                                                                                                  <select class="form-control form-control-select" id="group_1" data-product-attribute="1" name="group[1]">
+                                                                          <option value="21" title="200ml" selected="selected">200ml</option>
+                                                                      </select>
+                                                              
+                              
+                            </div>
+                                                            </div>
+            </div>
+            
+	</form>
+</div>
+        
+        
+        
+</div><div class="price-detail">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+      <div class="product-price-and-shipping ">
+      
+
+      
+      
+      <span class="sr-only">Prix</span>
+      <span class="price">
+        <span content="EUR"></span><span content="8.9">8,90�&nbsp;€</span>
+      </span>
+      
+      
+
+      
+	  
+	  	  
+    </div>
+  
+<p><a class="detail-product" href="https://rpparfums.fr/fr/gel-douche/357-341-so-oud-3760324583111.html#/21-contenance-200ml">Découvrir &gt; </a></p></div></div>
+    <div class="product-meta"></div>
+  </div>
+</article>
+		                   	</div>
+						</div>
+	                															<div class="slick-slide ">
+							<div class="item">
+		                    	<article class="product-miniature js-product-miniature" data-id-product="337" data-id-product-attribute="313" itemscope="" itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+    <div class="product-image">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+
+    	<a href="https://rpparfums.fr/fr/diffuseur-maison/337-313-jasmin-des-indes.html#/2-contenance-100ml" class="thumbnail product-thumbnail">
+	  <img class="img-fluid" src="images/jasmin-des-indes.jpg" alt="" data-full-size-image-url="https://rpparfums.fr/1009-large_default/jasmin-des-indes.jpg">
+	  
+	</a>
+    
+
+<div class="attribute-name">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+  <h4 class="h3 product-title"><a href="https://rpparfums.fr/fr/diffuseur-maison/337-313-jasmin-des-indes.html#/2-contenance-100ml">Jasmin des Indes</a></h4>
+
+
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+<div class="addToCartFormWrapper" data-product-id="337">
+	<form action="https://rpparfums.fr/fr/panier" method="post" class="addToCartForm">
+            <div class="variantsProductWrapper">
+                <div class="variants-product">
+                                                                        <div class="clearfix product-variants-item">
+                                                                <span class="control-label">Contenance</span>
+                                                                                                  <select class="form-control form-control-select" id="group_1" data-product-attribute="1" name="group[1]">
+                                                                          <option value="2" title="100ml" selected="selected">100ml</option>
+                                                                          <option value="21" title="200ml">200ml</option>
+                                                                      </select>
+                                                              
+                              
+                            </div>
+                                                            </div>
+            </div>
+            
+	</form>
+</div>
+        
+        
+        
+</div><div class="price-detail">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+      <div class="product-price-and-shipping ">
+      
+
+      
+      
+      <span class="sr-only">Prix</span>
+      <span class="price">
+        <span content="EUR"></span><span content="19.9">19,90�&nbsp;€</span>
+      </span>
+      
+      
+
+      
+	  
+	  	  
+    </div>
+  
+<p><a class="detail-product" href="https://rpparfums.fr/fr/diffuseur-maison/337-313-jasmin-des-indes.html#/2-contenance-100ml">Découvrir &gt; </a></p></div></div>
+    <div class="product-meta"></div>
+  </div>
+</article>
+		                   	</div>
+						</div>
+	                															<div class="slick-slide ">
+							<div class="item">
+		                    	<article class="product-miniature js-product-miniature" data-id-product="469" data-id-product-attribute="394" itemscope="" itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+    <div class="product-image">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+
+    	<a href="https://rpparfums.fr/fr/parfums-mixtes/469-394-nobody-is-perfect.html#/1-contenance-50ml" class="thumbnail product-thumbnail">
+	  <img class="img-fluid" src="images/nobody-is-perfect.jpg" alt="" data-full-size-image-url="https://rpparfums.fr/1394-large_default/nobody-is-perfect.jpg">
+	  
+	</a>
+    
+
+<div class="attribute-name">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+  <h4 class="h3 product-title"><a href="https://rpparfums.fr/fr/parfums-mixtes/469-394-nobody-is-perfect.html#/1-contenance-50ml">Nobody is Perfect</a></h4>
+
+
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+<div class="addToCartFormWrapper" data-product-id="469">
+	<form action="https://rpparfums.fr/fr/panier" method="post" class="addToCartForm">
+            <div class="variantsProductWrapper">
+                <div class="variants-product">
+                                                                        <div class="clearfix product-variants-item">
+                                                                <span class="control-label">Contenance</span>
+                                                                                                  <select class="form-control form-control-select" id="group_1" data-product-attribute="1" name="group[1]">
+                                                                          <option value="1" title="50ml" selected="selected">50ml</option>
+                                                                      </select>
+                                                              
+                              
+                            </div>
+                                                            </div>
+            </div>
+            
+	</form>
+</div>
+        
+        
+        
+</div><div class="price-detail">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+      <div class="product-price-and-shipping has_discount">
+      
+
+      
+      
+      <span class="sr-only">Prix</span>
+      <span class="price">
+        <span content="EUR"></span><span content="44.9">44,90�&nbsp;€</span>
+      </span>
+      
+      
+
+      <p><b style="color: #d0121a;">-9,80€ sur le 2ème</b></p>
+	  
+	          
+        <span class="sr-only">Prix de base</span>
+        <span class="regular-price">49,90�&nbsp;€</span>
+                  <span class="discount-amount discount-product">-5,00�&nbsp;€</span>
+              	  
+    </div>
+  
+<p><a class="detail-product" href="https://rpparfums.fr/fr/parfums-mixtes/469-394-nobody-is-perfect.html#/1-contenance-50ml">Découvrir &gt; </a></p></div></div>
+    <div class="product-meta"></div>
+  </div>
+</article>
+		                   	</div>
+						</div>
+	                															<div class="slick-slide ">
+							<div class="item">
+		                    	<article class="product-miniature js-product-miniature" data-id-product="134" data-id-product-attribute="64" itemscope="" itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+    <div class="product-image">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+
+    	<a href="https://rpparfums.fr/fr/sprays-textile/134-64-california-love.html#/4-contenance-250ml" class="thumbnail product-thumbnail">
+	  <img class="img-fluid" src="images/california-love.jpg" alt="" data-full-size-image-url="https://rpparfums.fr/741-large_default/california-love.jpg">
+	  
+	</a>
+    
+
+<div class="attribute-name">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+  <h4 class="h3 product-title"><a href="https://rpparfums.fr/fr/sprays-textile/134-64-california-love.html#/4-contenance-250ml">California Love</a></h4>
+
+
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+<div class="addToCartFormWrapper" data-product-id="134">
+	<form action="https://rpparfums.fr/fr/panier" method="post" class="addToCartForm">
+            <div class="variantsProductWrapper">
+                <div class="variants-product">
+                                                                        <div class="clearfix product-variants-item">
+                                                                <span class="control-label">Contenance</span>
+                                                                                                  <select class="form-control form-control-select" id="group_1" data-product-attribute="1" name="group[1]">
+                                                                          <option value="3" title="500ml">500ml</option>
+                                                                          <option value="4" title="250ml" selected="selected">250ml</option>
+                                                                      </select>
+                                                              
+                              
+                            </div>
+                                                            </div>
+            </div>
+            
+	</form>
+</div>
+        
+        
+        
+</div><div class="price-detail">
+<!-- @file modules\appagebuilder\views\templates\front\products\file_tpl -->
+
+      <div class="product-price-and-shipping ">
+      
+
+      
+      
+      <span class="sr-only">Prix</span>
+      <span class="price">
+        <span content="EUR"></span><span content="9.99">9,99�&nbsp;€</span>
+      </span>
+      
+      
+
+      <span style="color: #d0121a;"><b>3 sprays 25,90€</b></span>
+	  
+	  	  
+    </div>
+  
+<p><a class="detail-product" href="https://rpparfums.fr/fr/sprays-textile/134-64-california-love.html#/4-contenance-250ml">Découvrir &gt; </a></p></div></div>
+    <div class="product-meta"></div>
+  </div>
+</article>
+		                   	</div>
+						</div>
+	                							</div>
+		</div>
+	
+<script type="text/javascript">
+ap_list_functions.push(function(){
+	$('#form_17421560021312635').imagesLoaded( function() {
+		$('#form_17421560021312635').slick(
+						{
+				centerMode: false,
+				centerPadding: '60px',
+				dots: false,
+				infinite: false,
+				vertical: false,
+				verticalSwiping : false,
+				autoplay: true,
+				pauseonhover: true,
+				autoplaySpeed: 2000,
+				arrows: true,
+				rows: 1,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				rtl: false,
+				responsive: [
+										{
+					breakpoint: 1200,
+					settings: {
+						centerMode: false,
+						centerPadding: '60px',
+						slidesToShow: 3,
+						slidesToScroll: 1,
+					}
+					},
+										{
+					breakpoint: 992,
+					settings: {
+						centerMode: false,
+						centerPadding: '60px',
+						slidesToShow: 2,
+						slidesToScroll: 1,
+					}
+					},
+										{
+					breakpoint: 768,
+					settings: {
+						centerMode: false,
+						centerPadding: '60px',
+						slidesToShow: 2,
+						slidesToScroll: 1,
+					}
+					},
+										{
+					breakpoint: 576,
+					settings: {
+						centerMode: false,
+						centerPadding: '60px',
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+					},
+										{
+					breakpoint: 480,
+					settings: {
+						centerMode: false,
+						centerPadding: '60px',
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+					},
+									]
+			}
+					);
+		$('#form_17421560021312635').removeClass('slick-loading').addClass('slick-loaded').parents('.slick-row').addClass('hide-loading');
+	});
+});
+</script>
+                			        </div>
+            </div>
+
+    </div>            </div>
+</div>
+</div>
+
+          
+        
+      </section>
+    
+
+    
+      <footer class="page-footer">
+        
+          <!-- Footer content -->
+        
+      </footer>
+    
+
+  </section>
+
+
+    
+  </div>
+
+
+</div>
+
+</section>
+<footer id="footer" class="footer-container js-footer">
+
+
+  <div class="footer-top">
+          <div class="inner"><!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+<div class="wrapper" style="background: #fefaf6 no-repeat">
+
+<div class="container">
+    <div class="row text-center small-title ApRow  has-bg bg-fullwidth-container" style="padding-top: 70px;padding-bottom: 70px;">
+                        <h4 class="title_block title-ap-group">Pourquoi choisir RP Parfums ?</h4>
+                                    <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12 box-service ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApGeneral -->
+<div class="block service ApRawHtml">
+	                    <div class="row">    <div class="col-xl-3 col-md-3 col-sm-6 col-xs-6 sv-col">        <img src="images/essayez-beige.png" alt="icon 1">        <div class="sv-text">            <p class="small-title">Made in France</p>        </div>    </div>    <div class="col-xl-3 col-md-3 col-sm-6 col-xs-6 sv-col">        <img src="images/paiement-beige.png" alt="icon 1">        <div class="sv-text">            <p class="small-title">Paiement sécurisé</p>        </div>    </div>    <div class="col-xl-3 col-md-3 col-sm-6 col-xs-6 sv-col">        <img src="images/livraison-beige.png" alt="icon 1">        <div class="sv-text">           <p class="small-title">Livraison soignée et rapide</p>        </div>    </div>    <div class="col-xl-3 col-md-3 col-sm-6 col-xs-6 sv-col"><svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 61.05 58.74" style="enable-background:new 0 0 61.05 58.74;" xml:space="preserve"><path d="M49.05,58.74H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h37.05c6.6,0,12,5.4,12,12v34.74    C61.05,53.34,55.65,58.74,49.05,58.74z"></path><g>    <g>        <g>            <g>                <g>                    <path class="st0" d="M12.88,44.38v4.33c0,0.94,0.1,1.52,0.31,1.74c0.28,0.32,0.7,0.48,1.26,0.48h0.57v0.41H8.64v-0.41H9.2                        c0.63,0,1.08-0.2,1.35-0.61c0.15-0.22,0.22-0.76,0.22-1.61v-9.61c0-0.94-0.1-1.52-0.3-1.74c-0.29-0.32-0.71-0.48-1.27-0.48                        H8.64v-0.41h5.45c1.33,0,2.38,0.14,3.15,0.41c0.77,0.27,1.42,0.74,1.94,1.39c0.53,0.65,0.79,1.42,0.79,2.31                        c0,1.21-0.4,2.2-1.2,2.96c-0.8,0.76-1.93,1.14-3.4,1.14c-0.36,0-0.75-0.02-1.16-0.08C13.8,44.57,13.35,44.49,12.88,44.38z                         M12.88,43.76c0.39,0.07,0.73,0.13,1.03,0.16c0.3,0.04,0.56,0.05,0.77,0.05c0.76,0,1.42-0.29,1.97-0.88                        c0.55-0.59,0.83-1.35,0.83-2.29c0-0.64-0.13-1.24-0.39-1.79c-0.26-0.55-0.64-0.97-1.12-1.24c-0.48-0.27-1.03-0.41-1.65-0.41                        c-0.37,0-0.85,0.07-1.44,0.21V43.76z"></path>                    <path class="st0" d="M27.16,49.9c-1.03,0.8-1.68,1.26-1.94,1.38c-0.39,0.18-0.82,0.27-1.26,0.27c-0.7,0-1.27-0.24-1.72-0.71                        c-0.45-0.47-0.67-1.1-0.67-1.88c0-0.49,0.11-0.91,0.33-1.27c0.3-0.5,0.82-0.97,1.56-1.4c0.74-0.44,1.98-0.97,3.7-1.6V44.3                        c0-1-0.16-1.69-0.48-2.06s-0.78-0.56-1.39-0.56c-0.46,0-0.83,0.13-1.1,0.37c-0.28,0.25-0.42,0.53-0.42,0.86l0.02,0.64                        c0,0.34-0.09,0.6-0.26,0.78c-0.17,0.18-0.4,0.27-0.67,0.27c-0.27,0-0.49-0.09-0.66-0.29c-0.17-0.19-0.26-0.45-0.26-0.78                        c0-0.63,0.32-1.21,0.97-1.73c0.64-0.53,1.55-0.79,2.71-0.79c0.89,0,1.62,0.15,2.19,0.45c0.43,0.23,0.75,0.58,0.95,1.06                        c0.13,0.32,0.2,0.96,0.2,1.93v3.41c0,0.96,0.02,1.55,0.05,1.76c0.04,0.22,0.1,0.36,0.18,0.43c0.08,0.07,0.18,0.11,0.29,0.11                        c0.12,0,0.22-0.02,0.31-0.08c0.15-0.09,0.45-0.36,0.89-0.8v0.61c-0.82,1.1-1.6,1.65-2.35,1.65c-0.36,0-0.64-0.12-0.86-0.37                        C27.28,50.93,27.17,50.5,27.16,49.9z M27.16,49.19v-3.83c-1.1,0.44-1.82,0.75-2.14,0.93c-0.58,0.32-0.99,0.66-1.24,1.01                        c-0.25,0.35-0.37,0.73-0.37,1.15c0,0.53,0.16,0.97,0.47,1.31c0.31,0.35,0.68,0.52,1.09,0.52                        C25.52,50.29,26.25,49.92,27.16,49.19z"></path>                    <path class="st0" d="M34.38,41.01v2.26c0.84-1.51,1.71-2.26,2.59-2.26c0.4,0,0.73,0.12,1,0.37c0.26,0.25,0.39,0.53,0.39,0.85                        c0,0.29-0.09,0.53-0.29,0.72c-0.19,0.2-0.42,0.3-0.68,0.3c-0.26,0-0.54-0.13-0.86-0.38c-0.32-0.25-0.55-0.38-0.71-0.38                        c-0.13,0-0.27,0.07-0.43,0.22c-0.33,0.3-0.67,0.8-1.02,1.48V49c0,0.56,0.07,0.98,0.21,1.26c0.1,0.2,0.26,0.36,0.5,0.49                        c0.24,0.13,0.59,0.2,1.04,0.2v0.39h-5.14v-0.39c0.51,0,0.89-0.08,1.14-0.24c0.18-0.12,0.31-0.3,0.38-0.56                        c0.04-0.12,0.05-0.48,0.05-1.06V45.2c0-1.17-0.02-1.86-0.07-2.09c-0.05-0.22-0.14-0.38-0.26-0.49                        c-0.13-0.1-0.29-0.15-0.48-0.15c-0.23,0-0.48,0.05-0.77,0.16l-0.11-0.39l3.04-1.23H34.38z"></path>                    <path class="st0" d="M42.38,41.01v8.07c0,0.63,0.05,1.05,0.14,1.26c0.09,0.21,0.23,0.36,0.41,0.47                        c0.18,0.1,0.51,0.15,0.98,0.15v0.39h-4.88v-0.39c0.49,0,0.82-0.05,0.99-0.14c0.17-0.09,0.3-0.25,0.4-0.47                        c0.1-0.22,0.15-0.64,0.15-1.26v-3.87c0-1.09-0.03-1.79-0.1-2.12c-0.05-0.23-0.13-0.39-0.24-0.49                        c-0.11-0.09-0.26-0.14-0.45-0.14c-0.2,0-0.45,0.05-0.75,0.16l-0.15-0.39l3.03-1.23H42.38z M41.47,35.75                        c0.31,0,0.57,0.11,0.78,0.32c0.22,0.22,0.32,0.48,0.32,0.78c0,0.31-0.11,0.57-0.32,0.79c-0.21,0.22-0.48,0.33-0.78,0.33                        c-0.31,0-0.57-0.11-0.79-0.33s-0.33-0.48-0.33-0.79c0-0.31,0.11-0.57,0.32-0.78C40.9,35.86,41.16,35.75,41.47,35.75z"></path>                    <path class="st0" d="M51.65,41.01v3.42h-0.36c-0.28-1.08-0.63-1.8-1.07-2.19c-0.43-0.39-0.99-0.58-1.66-0.58                        c-0.51,0-0.92,0.14-1.24,0.41c-0.31,0.27-0.47,0.57-0.47,0.9c0,0.41,0.12,0.76,0.35,1.05c0.23,0.3,0.69,0.62,1.38,0.95                        l1.6,0.78c1.49,0.72,2.23,1.68,2.23,2.86c0,0.92-0.35,1.65-1.04,2.21c-0.69,0.56-1.46,0.84-2.32,0.84                        c-0.61,0-1.32-0.11-2.11-0.33c-0.24-0.07-0.44-0.11-0.59-0.11c-0.17,0-0.3,0.1-0.39,0.29H45.6v-3.59h0.36                        c0.21,1.03,0.6,1.8,1.17,2.31c0.58,0.52,1.23,0.78,1.94,0.78c0.5,0,0.92-0.15,1.23-0.44s0.48-0.65,0.48-1.07                        c0-0.5-0.18-0.93-0.53-1.27c-0.35-0.34-1.06-0.78-2.12-1.31c-1.06-0.53-1.76-1-2.08-1.43c-0.33-0.42-0.49-0.94-0.49-1.58                        c0-0.83,0.29-1.52,0.85-2.07c0.57-0.55,1.3-0.83,2.2-0.83c0.39,0,0.87,0.09,1.44,0.25c0.37,0.11,0.62,0.16,0.75,0.16                        c0.12,0,0.21-0.02,0.27-0.08c0.07-0.05,0.14-0.16,0.23-0.34H51.65z"></path>                </g>            </g>        </g>        <path class="st0" d="M44.75,9.16c-0.61-0.75-1.35-1.28-2.23-1.6c-0.88-0.32-2.09-0.47-3.62-0.47h-6.27v0.47h0.64            c0.65,0,1.14,0.19,1.46,0.56c0.23,0.26,0.34,0.93,0.34,2.01v11.06c0,0.98-0.08,1.59-0.25,1.86c-0.31,0.47-0.83,0.71-1.55,0.71            h-0.64H32.5c-0.05,0-0.1,0-0.15-0.01c-0.9-0.11-1.63-0.34-2.2-0.7c-0.58-0.37-1.27-1.12-2.08-2.25l-3.53-4.91            c1.44-0.32,2.5-0.87,3.19-1.64c0.69-0.77,1.03-1.69,1.03-2.74c0-0.98-0.3-1.83-0.9-2.54c-0.6-0.71-1.33-1.2-2.2-1.46            c-0.86-0.27-2.2-0.4-4.02-0.4h-6.24v0.47h0.64c0.65,0,1.14,0.19,1.46,0.56c0.24,0.26,0.35,0.93,0.35,2.01v11.06            c0,0.98-0.09,1.59-0.27,1.86c-0.31,0.47-0.83,0.71-1.55,0.71h-0.64v0.47h7.33v-0.47h-0.67c-0.64,0-1.12-0.18-1.44-0.56            c-0.24-0.26-0.35-0.93-0.35-2.01V16.2c0.13,0.01,0.27,0.01,0.39,0.02c0.13,0,0.24,0.01,0.35,0.01c0.27,0,0.62-0.01,1.05-0.03            l5.79,8h4.57h0.2h7.33v-0.47H39.3c-0.65,0-1.13-0.18-1.45-0.56c-0.24-0.26-0.35-0.93-0.35-2.01v-4.99            c0.55,0.12,1.06,0.21,1.54,0.27c0.48,0.06,0.93,0.09,1.34,0.09c1.68,0,2.99-0.44,3.91-1.31c0.92-0.88,1.38-2.01,1.38-3.41            C45.66,10.79,45.36,9.9,44.75,9.16z M20.97,15.42c-0.08,0-0.17,0-0.29-0.01c-0.12,0-0.26-0.01-0.42-0.01V8.28            c0.83-0.16,1.49-0.24,1.98-0.24c1.1,0,1.99,0.33,2.66,1c0.67,0.67,1,1.54,1,2.61c0,1.09-0.41,1.99-1.24,2.7            C23.83,15.06,22.6,15.42,20.97,15.42z M41.83,14.7c-0.64,0.68-1.39,1.02-2.27,1.02c-0.24,0-0.54-0.02-0.88-0.06            c-0.35-0.04-0.74-0.11-1.19-0.19V8.35c0.67-0.16,1.22-0.24,1.65-0.24c0.71,0,1.34,0.16,1.89,0.47c0.56,0.32,0.98,0.79,1.29,1.43            c0.3,0.64,0.45,1.32,0.45,2.06C42.78,13.15,42.47,14.03,41.83,14.7z"></path>    </g>    <path class="st0" d="M48.42,32H12.63c-1.99-0.43-3.97-0.86-5.96-1.44c1.99-0.6,3.97-1.04,5.96-1.47l5.96,0.03h29.83        c1.99,0.46,3.97,0.83,5.96,1.44C52.4,31.14,50.41,31.51,48.42,32z"></path></g></svg>        <div class="sv-text">            <p class="small-title">Services exclusifs en ligne</p>        </div>    </div></div>    	</div>
+    </div>            </div>
+</div>
+</div>
+</div>
+      </div>
+
+
+  <div class="footer-center">
+          <div class="container">
+          <div class="inner"><!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row  img-footer ApRow  has-bg bg-fullwidth-container" style="" data-bg_data=" #ffffff no-repeat">
+                        <h4 class="title_block title-ap-group">Nos créations parfumées</h4>
+                                    <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_7441368384901335" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">Gels Douche</p><div class="des-box-server"><p>Découvrez nos gels douche délicats, parfaits pour transformer chaque douche en une expérience sensorielle unique.</p><p><a class="btn btn-server " href="/155-gel-douche" data-mce-href="/155-gel-douche">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/155-gel-douche">
+                <img src="images/Brume%20Mobile-fetes.jpg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_2773749468820734" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">Diffuseurs Maison</p><div class="des-box-server"><p>Explorez l'harmonie olfactive avec nos diffuseurs maison RP Parfums. Transformez votre espace en un oasis parfumé</p><p><a class="btn btn-server " href="/152-diffuseur-maison" data-mce-href="/152-diffuseur-maison">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/152-diffuseur-maison">
+                <img src="images/993E422B-5CD9-45C8-AB50-0A61471A1652%202.jpeg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_9708192583679436" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">Déodorants</p><div class="des-box-server"><p>Découvrez la fraîcheur ultime avec nos déodorants RP Parfums. Une touche de luxe pour votre routine quotidienne.</p><p><a class="btn btn-server " href="/151-deodorants" data-mce-href="/151-deodorants">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/151-deodorants">
+                <img src="images/0958D1E5-D670-45AA-ADBB-E08EBCCCA94D%20%281%29.jpeg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div>            </div>
+<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row  img-footer ApRow  has-bg bg-fullwidth-container" style="" data-bg_data=" #ffffff no-repeat">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_3515372989031522" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">Diffuseurs Voiture</p><div class="des-box-server"><p>Explorez l'harmonie olfactive avec nos diffuseurs voiture RP Parfums. Transformez votre voyage en un oasis parfumé</p><p><a class="btn btn-server " href="/150-diffuseur-voiture" data-mce-href="/150-diffuseur-voiture">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/150-diffuseur-voiture">
+                <img src="images/1C207AF0-11B9-4988-B68E-AF8EE7F97524.jpeg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_1802360897421939" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">Cartes Cadeaux</p><div class="des-box-server"><p>Offrez le pouvoir du choix avec nos cartes élégantes, permettant �&nbsp; vos proches de sélectionner leurs parfums préférés.</p><p><a class="btn btn-server " href="/cartes-cadeaux" data-mce-href="/cartes-cadeaux">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/cartes-cadeaux">
+                <img src="images/Artboard%201.png" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_10726306787948146" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">BRUMES</p><div class="des-box-server"><p>Envie d’évasions raffinées! Choisissez parmi les fragrances délicates de la collection Brumes RP Paris.</p><p><a class="btn btn-server " href="/143-brumes">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/143-brumes">
+                <img src="images/C86DF1C9-8E19-4605-A595-FB79D05C6A2A.jpeg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div>            </div>
+<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row  img-footer ApRow  has-bg bg-fullwidth-container" style="" data-bg_data=" #ffffff no-repeat">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_18970706799861782" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">Parfums</p><div class="des-box-server"><p>Les trésors de fleurs odorantes et d’épices exotiques en mille et une senteurs pour la peau, les cheveux et la maison.</p><p><a class="btn btn-server " href="/140-parfums" data-mce-href="/140-parfums">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/140-parfums">
+                <img src="images/655A1B09-4B9E-441E-B8B9-8A38FDF2D7BA.jpeg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_9712631609114684" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">Sprays textiles</p><div class="des-box-server"><p>D’un simple geste, rafraîchissez vos textiles et créez un décor odorant dans chacune des pièces de votre intérieur.</p><p><a class="btn btn-server " href="/142-sprays-textiles">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/142-sprays-textiles">
+                <img src="images/6A08DC1D-15DC-4230-9D7A-CF9158B06D1F.jpeg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApImage -->
+<div id="image-form_9221810740408942" class="block ApImage">
+	
+                        <div class="image_description">
+            <p class="title-server">GALETS DE BAIN</p><div class="des-box-server"><p>Transformez votre bain en un moment de détente avec nos galets de bain RP Parfums.</p><p><a class="btn btn-server " href="/153-galets-de-bain" data-mce-href="/153-galets-de-bain">DÉCOUVRIR</a></p></div>        </div>
+                        <a href="/153-galets-de-bain">
+                <img src="images/80DA8796-4DB4-4123-9692-36FC73FCF0FD%20%281%29.jpeg" class="" title="" alt="" style=" width:100%; 
+			height:auto" loading="lazy">
+
+                </a>
+            	
+</div>
+    </div>            </div>
+</div>
+          </div>
+      </div>
+
+
+  <div class="footer-bottom">
+          <div class="container">
+          <div class="inner"><!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div id="form_9179433307375098" class="row ApRow  has-bg bg-fullwidth" style="" data-bg_data=" #000000 no-repeat">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12 text-center ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+<div id="blockEmailSubscription_displayFooter" class="block_newsletter block">
+  <div class="left-newsletter">
+    <h3 class="title_block" id="block-newsletter-label">Inscrivez-vous �&nbsp; notre Newsletter</h3>
+    <div class="col-xs-12 col-conditions">
+                  <p>Vous pouvez vous désinscrire �&nbsp; tout moment. Vous trouverez pour cela nos informations de contact dans les conditions d'utilisation du site.</p>
+            </div>
+  </div>
+  <div class="block_content">
+    <form action="https://rpparfums.fr/fr/#blockEmailSubscription_displayFooter" method="post">
+      <div class="row">
+        <div class="col-xs-12 col-form">
+          <div class="input-wrapper">
+            <input name="email" required="" type="text" value="" placeholder="Your email..." aria-labelledby="block-newsletter-label">
+            <button class="btn btn-outline float-xs-right" name="submitNewsletter" type="submit" value="S'inscrire">
+              <span>S'inscrire</span>
+            </button>
+          </div>
+          <input type="hidden" name="blockHookName" value="displayFooter"> <input type="hidden" name="action" value="0">
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-xs-12 col-mesg">
+                        
+                              
+                      </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+    </div>            </div>
+<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row block-linkfooter ApRow  has-bg bg-boxed" style="background: no-repeat;" data-bg_data=" no-repeat">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-1 col-lg-2 col-md-6 col-sm-12 col-xs-12 col-sp-12  ApColumn ">
+        <h4 class="title_block title-ap-column">Parfums</h4>
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApBlockLink -->
+            <div class="block ApLink cw-title-first ApBlockLink">
+                        
+                            <ul>
+                                                            <li><a href="/parfums/86-72-santal-rouge.html#/1-contenance-50ml" target="_self">Santal Rouge</a></li>
+                                                                                <li><a href="/parfums/83-majestic.html" target="_self">Majestic</a></li>
+                                                    </ul>
+                    </div>
+    <!-- @file modules\appagebuilder\views\templates\hook\ApBlockLink -->
+            <div class="block ApLink cw-title-first ApBlockLink">
+                        
+                            <ul>
+                                                            <li><a href="/parfums/77-33-eau-de-parfum-rp-jasmin-de-nuit.html" target="_self">Jasmin De Nuit</a></li>
+                                                                                <li><a href="/parfums/81-eau-de-parfum-rp-soleil-d-arabie.html" target="_self">Soleil D’Arabie</a></li>
+                                                                                <li><a href="/parfums/78-rose-cerise.html" target="_self">Rose Cerise</a></li>
+                                                    </ul>
+                    </div>
+    <!-- @file modules\appagebuilder\views\templates\hook\ApBlockLink -->
+            <div class="block ApLink cw-title-first ApBlockLink">
+                        
+                            <ul>
+                                                            <li><a href="/parfums/47-bella.html" target="_self">Bella</a></li>
+                                                                                <li><a href="/parfums/76-eau-de-parfum-rp-rouge-paris.html" target="_self">Rouge Paris</a></li>
+                                                                                <li><a href="/parfums/85-vie-de-reve.html" target="_self">Vie De Rêve</a></li>
+                                                    </ul>
+                    </div>
+    
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-xs-12 col-sp-12  ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApBlockLink -->
+            <div class="block ApLink ApBlockLink">
+                            <h4 class="title_block">
+                    INFORMATIONS LÉGALES
+                </h4>
+                        
+                            <ul>
+                                                            <li><a href="https://rpparfums.fr/fr/content/7-conditions-generales-de-vente-rp-paris" target="_self">Mentions légales</a></li>
+                                                                                <li><a href="https://rpparfums.fr/fr/content/7-conditions-generales-de-vente-rp-paris" target="_self">Conditions générales de vente</a></li>
+                                                                                <li><a href="https://rpparfums.fr/fr/content/7-conditions-generales-de-vente-rp-paris" target="_self">Protection des données</a></li>
+                                                    </ul>
+                    </div>
+    
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-xs-12 col-sp-12  ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApBlockLink -->
+            <div class="block ApLink ApBlockLink">
+                            <h4 class="title_block">
+                    RP PARIS
+                </h4>
+                        
+                            <ul>
+                                                            <li><a href="https://rpparfums.fr/fr/content/14-nos-boutiques-rp-parfums" target="_self">Nos boutiques</a></li>
+                                                                                <li><a href="https://rpparfums.fr/fr/content/15--a-propos" target="_self">QUI SOMMES-NOUS ?</a></li>
+                                                                                <li><a href="https://rpparfums.fr/fr/nous-contacter" target="_self">Nous Contacter</a></li>
+                                                    </ul>
+                    </div>
+    
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-sp-2 text-center logo-footer ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApGenCode -->
+
+	<div class="logo">    <a href="https://rpparfums.fr/"><!--?xml version="1.0" encoding="UTF-8"?--><svg version="1.1" id="svg2" viewBox="0 0 377.95334 377.95334" sodipodi:docname="RP_logo.ai" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">  <defs id="defs6">    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">      <path d="M 0,283.465 H 283.465 V 0 H 0 Z" id="path14"></path>    </clipPath>  </defs>  <sodipodi:namedview id="namedview4" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"></sodipodi:namedview>  <g id="g8" inkscape:groupmode="layer" inkscape:label="RP_logo" transform="matrix(1.3333333,0,0,-1.3333333,0,377.95333)">    <g id="g10">      <g id="g12" clip-path="url(#clipPath16)">        <g id="g18" transform="translate(58.9638,74.7249)">          <path d="m 0,0 c 1.812,-0.346 3.413,-0.602 4.815,-0.768 1.402,-0.18 2.593,-0.256 3.585,-0.256 3.554,0 6.614,1.37 9.194,4.123 2.581,2.74 3.868,6.3 3.868,10.679 0,2.997 -0.615,5.788 -1.844,8.375 -1.23,2.574 -2.971,4.508 -5.225,5.788 -2.254,1.281 -4.815,1.921 -7.683,1.921 -1.742,0 -3.976,-0.333 -6.71,-0.973 z m 0,-2.92 v -20.232 c 0,-4.379 0.48,-7.094 1.434,-8.144 1.3,-1.511 3.259,-2.254 5.891,-2.254 h 2.663 v -1.895 h -29.759 v 1.895 h 2.612 c 2.939,0 5.039,0.948 6.3,2.869 0.685,1.05 1.025,3.559 1.025,7.529 v 44.87 c 0,4.366 -0.461,7.081 -1.383,8.144 -1.332,1.498 -3.311,2.254 -5.942,2.254 h -2.612 v 1.895 H 5.686 c 6.217,0 11.114,-0.64 14.7,-1.921 3.586,-1.28 6.608,-3.445 9.066,-6.479 2.459,-3.048 3.688,-6.646 3.688,-10.808 0,-5.673 -1.869,-10.283 -5.609,-13.83 -3.739,-3.56 -9.021,-5.327 -15.853,-5.327 -1.671,0 -3.483,0.115 -5.429,0.359 C 4.303,-3.765 2.222,-3.406 0,-2.92" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path20"></path>        </g>        <g id="g22" transform="translate(125.6538,49.3704)">          <path d="m 0,0 v 17.876 c -5.154,-2.049 -8.484,-3.508 -9.988,-4.354 -2.696,-1.511 -4.629,-3.073 -5.788,-4.712 -1.159,-1.639 -1.742,-3.432 -1.742,-5.378 0,-2.459 0.737,-4.508 2.203,-6.121 1.466,-1.626 3.156,-2.433 5.071,-2.433 2.593,0 6.012,1.703 10.244,5.122 m 0,-3.329 c -4.815,-3.727 -7.837,-5.878 -9.066,-6.454 -1.844,-0.858 -3.81,-1.281 -5.891,-1.281 -3.246,0 -5.916,1.101 -8.016,3.33 -2.1,2.215 -3.15,5.135 -3.15,8.758 0,2.28 0.512,4.265 1.537,5.942 1.402,2.318 3.835,4.508 7.299,6.556 3.464,2.049 9.226,4.533 17.287,7.479 v 1.844 c 0,4.674 -0.743,7.888 -2.228,9.629 -1.486,1.742 -3.643,2.613 -6.48,2.613 -2.151,0 -3.86,-0.59 -5.122,-1.742 -1.299,-1.165 -1.946,-2.497 -1.946,-3.995 l 0.102,-2.971 c 0,-1.575 -0.403,-2.792 -1.203,-3.637 -0.801,-0.858 -1.851,-1.28 -3.15,-1.28 -1.262,0 -2.299,0.435 -3.099,1.331 -0.801,0.884 -1.204,2.1 -1.204,3.637 0,2.933 1.505,5.634 4.507,8.093 3.003,2.459 7.223,3.688 12.652,3.688 4.168,0 7.581,-0.704 10.244,-2.1 C 5.09,35.048 6.576,33.396 7.53,31.142 8.144,29.67 8.451,26.661 8.451,22.128 V 6.198 c 0,-4.482 0.084,-7.222 0.257,-8.221 0.172,-1.012 0.454,-1.691 0.845,-2.023 0.39,-0.346 0.845,-0.513 1.357,-0.513 0.544,0 1.025,0.116 1.434,0.359 0.717,0.435 2.1,1.69 4.149,3.739 v -2.868 c -3.822,-5.122 -7.478,-7.684 -10.961,-7.684 -1.671,0 -3.003,0.577 -3.995,1.742 C 0.544,-8.119 0.032,-6.134 0,-3.329" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path24"></path>        </g>        <g id="g26" transform="translate(159.3572,87.5814)">          <path d="M 0,0 V -10.552 C 3.931,-3.521 7.965,0 12.088,0 c 1.883,0 3.432,-0.576 4.661,-1.716 1.23,-1.152 1.844,-2.471 1.844,-3.97 0,-1.331 -0.435,-2.458 -1.331,-3.38 -0.884,-0.922 -1.947,-1.383 -3.176,-1.383 -1.191,0 -2.536,0.589 -4.021,1.767 -1.485,1.178 -2.587,1.767 -3.304,1.767 -0.614,0 -1.28,-0.346 -1.997,-1.024 C 3.227,-9.348 1.639,-11.653 0,-14.854 V -37.34 c 0,-2.6 0.327,-4.559 0.973,-5.891 0.448,-0.922 1.23,-1.69 2.356,-2.305 1.127,-0.614 2.754,-0.922 4.866,-0.922 v -1.844 h -24.022 v 1.844 c 2.388,0 4.168,0.372 5.327,1.127 0.851,0.538 1.453,1.409 1.792,2.613 0.173,0.576 0.257,2.228 0.257,4.968 v 18.184 c 0,5.455 -0.109,8.707 -0.333,9.757 -0.224,1.037 -0.634,1.793 -1.23,2.279 -0.595,0.474 -1.338,0.718 -2.228,0.718 -1.056,0 -2.253,-0.257 -3.585,-0.769 L -16.339,-5.737 -2.151,0 Z" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path28"></path>        </g>        <g id="g30" transform="translate(192.4974,112.1164)">          <path d="M 0,0 C 1.434,0 2.663,-0.512 3.662,-1.511 4.674,-2.523 5.173,-3.739 5.173,-5.173 5.173,-6.608 4.674,-7.837 3.662,-8.861 2.663,-9.886 1.434,-10.398 0,-10.398 c -1.434,0 -2.663,0.512 -3.688,1.537 -1.024,1.024 -1.537,2.253 -1.537,3.688 0,1.434 0.513,2.65 1.511,3.662 C -2.702,-0.512 -1.46,0 0,0 m 4.251,-24.535 v -37.699 c 0,-2.945 0.218,-4.891 0.641,-5.865 0.435,-0.973 1.062,-1.703 1.895,-2.176 0.845,-0.487 2.369,-0.718 4.584,-0.718 v -1.844 h -22.793 v 1.844 c 2.292,0 3.828,0.218 4.61,0.666 0.794,0.436 1.408,1.178 1.869,2.203 0.461,1.024 0.692,2.983 0.692,5.89 v 18.081 c 0,5.084 -0.154,8.375 -0.461,9.886 -0.231,1.088 -0.615,1.844 -1.127,2.279 -0.512,0.423 -1.204,0.641 -2.1,0.641 -0.948,0 -2.113,-0.256 -3.483,-0.769 l -0.717,1.844 14.137,5.737 z" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path32"></path>        </g>        <g id="g34" transform="translate(240.0307,87.5814)">          <path d="m 0,0 v -15.981 h -1.69 c -1.294,5.02 -2.958,8.426 -4.994,10.244 -2.024,1.806 -4.61,2.715 -7.76,2.715 -2.382,0 -4.316,-0.64 -5.788,-1.895 -1.46,-1.268 -2.203,-2.664 -2.203,-4.2 0,-1.921 0.551,-3.56 1.639,-4.918 1.063,-1.408 3.214,-2.894 6.454,-4.456 l 7.478,-3.637 c 6.941,-3.38 10.398,-7.836 10.398,-13.368 0,-4.277 -1.613,-7.709 -4.84,-10.321 -3.227,-2.613 -6.838,-3.919 -10.833,-3.919 -2.869,0 -6.147,0.512 -9.835,1.537 -1.127,0.333 -2.049,0.512 -2.766,0.512 -0.781,0 -1.396,-0.448 -1.844,-1.332 h -1.69 v 16.75 h 1.69 c 0.961,-4.79 2.792,-8.388 5.481,-10.808 2.702,-2.433 5.724,-3.637 9.066,-3.637 2.356,0 4.277,0.692 5.762,2.075 1.486,1.383 2.229,3.047 2.229,4.994 0,2.356 -0.82,4.328 -2.485,5.941 -1.652,1.601 -4.955,3.637 -9.911,6.096 -4.943,2.458 -8.195,4.674 -9.732,6.659 -1.537,1.946 -2.305,4.405 -2.305,7.375 0,3.855 1.332,7.082 3.97,9.681 2.65,2.587 6.069,3.893 10.27,3.893 1.843,0 4.084,-0.397 6.709,-1.178 1.742,-0.512 2.907,-0.768 3.484,-0.768 0.55,0 0.973,0.115 1.28,0.358 C -2.459,-1.357 -2.1,-0.82 -1.69,0 Z" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path36"></path>        </g>        <g id="g38" transform="translate(194.1612,210.3998)">          <path d="m 0,0 c -2.967,-3.164 -6.494,-4.745 -10.58,-4.745 -1.14,0 -2.515,0.098 -4.126,0.295 -1.612,0.196 -3.458,0.491 -5.54,0.884 v 33.243 c 3.143,0.746 5.717,1.12 7.721,1.12 3.301,0 6.248,-0.737 8.841,-2.21 C -1.09,27.113 0.914,24.893 2.329,21.926 3.743,18.959 4.45,15.747 4.45,12.289 4.45,7.259 2.967,3.163 0,0 m -97.401,-3.331 c -0.354,0 -0.806,0.01 -1.356,0.03 -0.55,0.02 -1.199,0.03 -1.945,0.03 v 33.243 c 3.89,0.746 6.975,1.119 9.254,1.119 5.147,0 9.283,-1.561 12.407,-4.685 3.124,-3.124 4.686,-7.182 4.686,-12.172 0,-5.108 -1.936,-9.313 -5.806,-12.613 -3.871,-3.301 -9.617,-4.952 -17.24,-4.952 M 13.645,25.905 c -2.829,3.497 -6.307,5.983 -10.433,7.456 -4.126,1.473 -9.764,2.21 -16.916,2.21 H -42.998 V 33.39 h 3.006 c 3.025,0 5.305,-0.864 6.837,-2.593 1.061,-1.218 1.592,-4.342 1.592,-9.372 v -51.633 c 0,-4.559 -0.393,-7.447 -1.179,-8.664 -1.454,-2.201 -3.871,-3.301 -7.25,-3.301 h -3.006 -0.591 c -0.234,0 -0.472,0.012 -0.705,0.04 -4.2,0.492 -7.619,1.578 -10.256,3.261 -2.712,1.728 -5.953,5.225 -9.726,10.491 L -80.78,-5.452 c 6.72,1.493 11.68,4.046 14.883,7.662 3.203,3.615 4.804,7.878 4.804,12.791 0,4.597 -1.406,8.555 -4.214,11.876 -2.81,3.32 -6.229,5.6 -10.256,6.837 -4.029,1.238 -10.286,1.857 -18.773,1.857 h -29.118 V 33.39 h 3.007 c 3.025,0 5.305,-0.864 6.837,-2.593 1.099,-1.218 1.65,-4.342 1.65,-9.372 v -51.633 c 0,-4.559 -0.412,-7.447 -1.238,-8.664 -1.454,-2.201 -3.87,-3.301 -7.249,-3.301 h -3.007 v -2.181 h 34.246 v 2.181 h -3.124 c -2.987,0 -5.227,0.864 -6.72,2.593 -1.1,1.218 -1.65,4.342 -1.65,9.372 v 23.223 c 0.628,-0.039 1.238,-0.069 1.827,-0.088 0.59,-0.02 1.139,-0.03 1.651,-0.03 1.257,0 2.888,0.039 4.892,0.118 l 27.054,-37.369 h 21.337 0.943 34.245 v 2.181 h -3.065 c -3.026,0 -5.285,0.864 -6.778,2.593 -1.1,1.218 -1.65,4.342 -1.65,9.372 v 23.282 c 2.554,-0.551 4.951,-0.963 7.19,-1.237 2.24,-0.276 4.323,-0.413 6.248,-0.413 7.859,0 13.94,2.042 18.243,6.13 4.302,4.086 6.454,9.391 6.454,15.914 0,4.794 -1.415,8.939 -4.244,12.437" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path40"></path>        </g>        <g id="g42" transform="translate(224.9383,129.6153)">          <path d="m 0,0 h -167.119 c -9.277,2.017 -18.554,4.034 -27.831,6.722 9.277,2.824 18.554,4.841 27.831,6.857 l 27.831,-0.134 H 0 C 9.277,11.294 18.554,9.546 27.831,6.722 18.554,4.034 9.277,2.286 0,0" style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path44"></path>        </g>      </g>    </g>  </g></svg></a></div>
+
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-3 col-lg-2 col-md-6 col-sm-12 col-xs-12 col-sp-12 social-footer ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApGeneral -->
+<div class="block ApRawHtml">
+	                    <ul>     <li class="facebook"><a href="https://fr-fr.facebook.com/ParfumsRP/" title="Facebook" target="_blank"><span><svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.91 165.12"><path d="M78.5,5.54C44.8,10.84,18.7,34.24,9.9,67c-3,11.2-3,29.7,0,41a83.59,83.59,0,0,0,58.6,59.7c10.4,2.9,31.5,3.2,41.4.5,16.7-4.5,26.7-10.3,38.6-22.2s17.7-21.9,22.2-38.6c2.7-10,2.4-31-.5-41.4a84.34,84.34,0,0,0-26.7-41.8c-8-6.8-23.7-14.7-33.5-17.1C101.7,5.14,86.2,4.34,78.5,5.54Zm29.5,8.7a76.88,76.88,0,0,1,49.5,39.7c6.3,12.8,7.9,19.8,7.9,33.6s-1.6,20.9-7.8,33.5c-7.8,15.7-18.3,26.3-34.1,34-12.7,6.3-19.7,8-33.5,7.9-16.9,0-28.7-3.7-43.1-13.5-7.2-4.8-17.4-15.9-22.2-24-7.8-13.2-11.6-31.7-9.7-46.2,2.5-17.9,9.5-32.3,21.9-44.8C56,15.44,82.2,7.94,108,14.24Z" transform="translate(-7.65 -4.97)"></path><path d="M88.5,40.64c-4,1.2-5.8,2.7-8.4,6.9-1.7,2.9-2.1,5.1-2.1,13.2v9.8H68v17H78v49H98v-49h6.5c4.4,0,6.7-.4,6.9-1.3.3-.6.7-4.5,1-8.5l.5-7.2H98v-6c0-5.6.2-6.1,2.6-7a24.69,24.69,0,0,1,7.5-1H113v-17l-10.7.1C96.3,39.64,90.2,40.14,88.5,40.64Z" transform="translate(-7.65 -4.97)"></path></svg></span>Facebook</a></li>              <li class="instagram"><a href="https://www.instagram.com/parfumsrpparis/" title="Instagram" target="_blank"><span><i class="icon-icon-insta"></i></span>Instagram</a></li><li class="pinterest"><a href="https://www.pinterest.com/" title="pinterest" target="_blank"><span><i class="icon-icon-pinterest"></i></span>Pinterest</a></li><li class="snapchat"><a href="https://www.snapchat.com" title="snapchat" target="_blank"><span><svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.7 39.74"><defs><style>.cls-1{fill:#fff;}</style></defs><path d="M19.9,39.73C9,40-.1,30.84,0,19.73A19.85,19.85,0,0,1,39.7,20c0,.17,0,.33,0,.5A19.63,19.63,0,0,1,19.9,39.73Zm0-37.8a18,18,0,1,0,.24,0H19.9Z" transform="translate(0 0)"></path><path class="cls-1" d="M19.84,1.93a18.07,18.07,0,1,1-18.13,18v-.09A18.06,18.06,0,0,1,19.84,1.93ZM13.62,18.21A6.63,6.63,0,0,0,12,17.93a4.42,4.42,0,0,0-1.26.5,4,4,0,0,0,.63,1.16,3.47,3.47,0,0,0,1.16.52c.76.3,1,.73.63,1.55a6.3,6.3,0,0,1-3.75,3.49c-.33.13-.82.55-.78.76a1.55,1.55,0,0,0,.78.87c.43.16.87.29,1.32.41s.79.4.84.66c.17,1.09,1,1,1.61.81a3.16,3.16,0,0,1,3,.59c2.86,1.91,4.48,1.92,7.31,0a3.42,3.42,0,0,1,3.2-.6c.53.18,1.13.23,1.36-.67.09-.38.73-.69,1.17-.91s1-.16,1.33-.4a1.6,1.6,0,0,0,.5-1,.83.83,0,0,0-.48-.54A5.91,5.91,0,0,1,27,22.51c-1-1.33-.9-1.84.56-2.57.24-.13.58-.18.72-.37a8.86,8.86,0,0,0,.62-1.23,5.51,5.51,0,0,0-1.42-.47,4.48,4.48,0,0,0-1.34.34,3.83,3.83,0,0,1-.07-.58A19.85,19.85,0,0,0,26,13.7c-.6-2.62-2.55-3.91-5.09-4.32-3.4-.57-7.6,2-7.25,5.78C13.7,16.16,13.62,17.15,13.62,18.21Z" transform="translate(0 0)"></path><path d="M13.62,18.21c0-1.06.08-2.05,0-3-.36-3.87,3.84-6.38,7.28-5.81,2.54.41,4.49,1.7,5.09,4.32a19.85,19.85,0,0,1,.12,3.93,3.83,3.83,0,0,0,.07.58,4.48,4.48,0,0,1,1.34-.34,5.58,5.58,0,0,1,1.38.45,8.73,8.73,0,0,1-.65,1.25c-.14.19-.48.24-.72.37-1.46.73-1.59,1.24-.56,2.57a5.91,5.91,0,0,0,3.6,2.62c.19,0,.51.39.48.54a1.6,1.6,0,0,1-.5,1c-.37.24-.92.2-1.33.4s-1.08.53-1.17.91c-.23.9-.83.85-1.36.67a3.42,3.42,0,0,0-3.2.6c-2.83,1.91-4.45,1.9-7.31,0a3.16,3.16,0,0,0-3-.59c-.65.22-1.44.28-1.61-.81-.05-.26-.51-.51-.84-.66S9.84,27,9.41,26.8a1.55,1.55,0,0,1-.78-.87c0-.21.45-.63.78-.76a6.3,6.3,0,0,0,3.75-3.49c.36-.82.13-1.25-.63-1.55a3.47,3.47,0,0,1-1.16-.52,4,4,0,0,1-.63-1.16A4.42,4.42,0,0,1,12,18,6.85,6.85,0,0,1,13.62,18.21Z" transform="translate(0 0)"></path></svg></span>Snapchat</a></li>          </ul>    	</div>
+    </div>            </div>
+<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row text-center  font-mobile font-mobile-bold ApRow  has-bg bg-boxed" style="background: no-repeat;padding-top: 50px;" data-bg_data=" no-repeat">
+                                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12 text-center social-box ApColumn ">
+                    <!-- @file modules\appagebuilder\views\templates\hook\ApGeneral -->
+<div class="block text-center ApHtml">
+	                    <div class="block_content"><p>©RP Parfums 2024</p></div>
+    	</div>
+    </div>            </div>
+</div>
+          </div>
+      </div>
+
+</footer>
+</main>
+
+  <script type="text/javascript" src="js/bottom-6be1ad373.js"></script>
+  <script type="text/javascript" src="js/cookiesplus-front.js" async=""></script>
+  <script type="text/javascript" src="js/url_catcher.js"></script>
+
+
+<script type="text/javascript">
+	var choosefile_text = "Choisir un fichier";
+	var turnoff_popup_text = "Do not show this popup again";
+	
+	var size_item_quickview = 82;
+	var style_scroll_quickview = 'vertical';
+	
+	var size_item_page = 113;
+	var style_scroll_page = 'horizontal';
+	
+	var size_item_quickview_attr = 101;	
+	var style_scroll_quickview_attr = 'vertical';
+	
+	var size_item_popup = 160;
+	var style_scroll_popup = 'vertical';
+</script>
+
+<div class="modal leo-quicklogin-modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="leo-quicklogin-form row">
+		<div class="leo-form leo-login-form col-sm-6 leo-form-active">
+		<h3 class="leo-login-title">			
+			<span class="title-both">
+				Connexion au compte existant
+			</span>
+		
+			<span class="title-only">
+				Connectez-vous �&nbsp; votre compte
+			</span>		
+		</h3>
+		<form class="lql-form-content leo-login-form-content" action="#" method="post">
+			<div class="form-group lql-form-mesg has-success">					
+			</div>			
+			<div class="form-group lql-form-mesg has-danger">					
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="email" class="form-control lql-email-login" name="lql-email-login" required="" placeholder="Adresse e-mail">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="password" class="form-control lql-pass-login" name="lql-pass-login" required="" placeholder="Mot de passe">
+				<i class="fa fa-eye-slash"></i>
+			</div>
+			<div class="form-group row lql-form-content-element">				
+				<div class="col-xs-6">
+											<input type="checkbox" class="lql-rememberme" name="lql-rememberme">
+						<label class="form-control-label"><span>Souviens-toi de moi</span></label>
+									</div>				
+				<div class="col-xs-6 text-sm-right">
+					<a role="button" href="#" class="leoquicklogin-forgotpass">Mot de passe oublié</a>
+				</div>
+			</div>
+			<div class="form-group text-right">
+				<button type="submit" class="form-control-submit lql-form-bt lql-login-bt btn btn-primary">			
+					<span class="leoquicklogin-loading leoquicklogin-cssload-speeding-wheel"></span>
+					<i class="leoquicklogin-icon leoquicklogin-success-icon material-icons"></i>
+					<i class="leoquicklogin-icon leoquicklogin-fail-icon material-icons"></i>
+					<span class="lql-bt-txt">					
+						S'identifier
+					</span>
+				</button>
+			</div>
+			<div class="form-group lql-callregister">
+				<a role="button" href="#" class="lql-callregister-action">Pas de compte? Créer un ici</a>
+			</div>
+		</form>
+		<div class="leo-resetpass-form">
+			<h3>réinitialiser le mot de passe</h3>
+			<form class="lql-form-content leo-resetpass-form-content" action="#" method="post">
+				<div class="form-group lql-form-mesg has-success">					
+				</div>			
+				<div class="form-group lql-form-mesg has-danger">					
+				</div>
+				<div class="form-group lql-form-content-element">
+					<input type="email" class="form-control lql-email-reset" name="lql-email-reset" required="" placeholder="Adresse e-mail">
+				</div>
+				<div class="form-group">					
+					<button type="submit" class="form-control-submit lql-form-bt leoquicklogin-reset-pass-bt btn btn-primary">			
+						<span class="leoquicklogin-loading leoquicklogin-cssload-speeding-wheel"></span>
+						<i class="leoquicklogin-icon leoquicklogin-success-icon material-icons"></i>
+						<i class="leoquicklogin-icon leoquicklogin-fail-icon material-icons"></i>
+						<span class="lql-bt-txt">					
+							réinitialiser le mot de passe
+						</span>
+					</button>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+	
+	<div class="leo-form leo-register-form col-sm-6 leo-form-active">
+		<h3 class="leo-register-title">
+			Nouveau compte S'inscrire
+		</h3>
+		<form class="lql-form-content leo-register-form-content" action="#" method="post">
+			<div class="form-group lql-form-mesg has-success">					
+			</div>			
+			<div class="form-group lql-form-mesg has-danger">					
+			</div>
+						<div class="form-group lql-form-content-element">
+    			<div class="form-control-valign">
+					<label class="form-control-label radio-inline">
+	              		<span class="custom-radio">
+	                		<input class="id_gender" name="id_gender" type="radio" value="1">
+	                		<span></span>
+	              		</span>
+              			Mr.
+            		</label>
+                    <label class="form-control-label radio-inline">
+             			<span class="custom-radio">
+			                <input class="id_gender" name="id_gender" type="radio" value="2">
+			                <span></span>
+			            </span>
+		              	Mrs.
+		            </label>
+   		 		</div>
+			</div>
+						<div class="form-group lql-form-content-element">
+				<input type="text" class="form-control lql-register-firstname" name="lql-register-firstname" placeholder="Prénom">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="text" class="form-control lql-register-lastname" name="lql-register-lastname" required="" placeholder="Nom de famille">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="email" class="form-control lql-register-email" name="lql-register-email" required="" placeholder="Adresse e-mail">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="password" class="form-control lql-register-pass" name="lql-register-pass" required="" placeholder="Mot de passe">
+			</div>
+									<div class="form-group lql-form-content-element">
+				<label class="form-control-label">
+		            <input class="newsletter" name="newsletter" type="checkbox" value="1">
+		            Sign up for our newsletter
+		        </label>
+			</div>
+						<div class="form-group text-right">				
+				<button type="submit" name="submit" class="form-control-submit lql-form-bt lql-register-bt btn btn-primary">			
+					<span class="leoquicklogin-loading leoquicklogin-cssload-speeding-wheel"></span>
+					<i class="leoquicklogin-icon leoquicklogin-success-icon material-icons"></i>
+					<i class="leoquicklogin-icon leoquicklogin-fail-icon material-icons"></i>
+					<span class="lql-bt-txt">					
+						Créer un compte
+					</span>
+				</button>
+			</div>
+			<div class="form-group lql-calllogin">
+				<div>Vous avez déj�&nbsp; un compte?</div>
+				<a role="button" href="#" class="lql-calllogin-action">Connectez-vous �&nbsp; la place</a>
+				Ou
+				<a role="button" href="#" class="lql-calllogin-action lql-callreset-action">Réinitialiser le mot de passe</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+            </div> 
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div><div class="leoquicklogin-mask"></div>
+
+<div class="leoquicklogin-slidebar">
+    <div class="leoquicklogin-slidebar-wrapper">
+        <div class="leoquicklogin-slidebar-top">
+            <button type="button" class="leoquicklogin-slidebar-close btn btn-secondary">
+                <i class="material-icons"></i>
+                <span>Fermer</span>
+            </button>
+        </div>
+        <div class="leo-quicklogin-form row">
+		<div class="leo-form leo-login-form col-sm-6 leo-form-active">
+		<h3 class="leo-login-title">			
+			<span class="title-both">
+				Connexion au compte existant
+			</span>
+		
+			<span class="title-only">
+				Connectez-vous �&nbsp; votre compte
+			</span>		
+		</h3>
+		<form class="lql-form-content leo-login-form-content" action="#" method="post">
+			<div class="form-group lql-form-mesg has-success">					
+			</div>			
+			<div class="form-group lql-form-mesg has-danger">					
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="email" class="form-control lql-email-login" name="lql-email-login" required="" placeholder="Adresse e-mail">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="password" class="form-control lql-pass-login" name="lql-pass-login" required="" placeholder="Mot de passe">
+				<i class="fa fa-eye-slash"></i>
+			</div>
+			<div class="form-group row lql-form-content-element">				
+				<div class="col-xs-6">
+											<input type="checkbox" class="lql-rememberme" name="lql-rememberme">
+						<label class="form-control-label"><span>Souviens-toi de moi</span></label>
+									</div>				
+				<div class="col-xs-6 text-sm-right">
+					<a role="button" href="#" class="leoquicklogin-forgotpass">Mot de passe oublié</a>
+				</div>
+			</div>
+			<div class="form-group text-right">
+				<button type="submit" class="form-control-submit lql-form-bt lql-login-bt btn btn-primary">			
+					<span class="leoquicklogin-loading leoquicklogin-cssload-speeding-wheel"></span>
+					<i class="leoquicklogin-icon leoquicklogin-success-icon material-icons"></i>
+					<i class="leoquicklogin-icon leoquicklogin-fail-icon material-icons"></i>
+					<span class="lql-bt-txt">					
+						S'identifier
+					</span>
+				</button>
+			</div>
+			<div class="form-group lql-callregister">
+				<a role="button" href="#" class="lql-callregister-action">Pas de compte? Créer un ici</a>
+			</div>
+		</form>
+		<div class="leo-resetpass-form">
+			<h3>réinitialiser le mot de passe</h3>
+			<form class="lql-form-content leo-resetpass-form-content" action="#" method="post">
+				<div class="form-group lql-form-mesg has-success">					
+				</div>			
+				<div class="form-group lql-form-mesg has-danger">					
+				</div>
+				<div class="form-group lql-form-content-element">
+					<input type="email" class="form-control lql-email-reset" name="lql-email-reset" required="" placeholder="Adresse e-mail">
+				</div>
+				<div class="form-group">					
+					<button type="submit" class="form-control-submit lql-form-bt leoquicklogin-reset-pass-bt btn btn-primary">			
+						<span class="leoquicklogin-loading leoquicklogin-cssload-speeding-wheel"></span>
+						<i class="leoquicklogin-icon leoquicklogin-success-icon material-icons"></i>
+						<i class="leoquicklogin-icon leoquicklogin-fail-icon material-icons"></i>
+						<span class="lql-bt-txt">					
+							réinitialiser le mot de passe
+						</span>
+					</button>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+	
+	<div class="leo-form leo-register-form col-sm-6 leo-form-active">
+		<h3 class="leo-register-title">
+			Nouveau compte S'inscrire
+		</h3>
+		<form class="lql-form-content leo-register-form-content" action="#" method="post">
+			<div class="form-group lql-form-mesg has-success">					
+			</div>			
+			<div class="form-group lql-form-mesg has-danger">					
+			</div>
+						<div class="form-group lql-form-content-element">
+    			<div class="form-control-valign">
+					<label class="form-control-label radio-inline">
+	              		<span class="custom-radio">
+	                		<input class="id_gender" name="id_gender" type="radio" value="1">
+	                		<span></span>
+	              		</span>
+              			Mr.
+            		</label>
+                    <label class="form-control-label radio-inline">
+             			<span class="custom-radio">
+			                <input class="id_gender" name="id_gender" type="radio" value="2">
+			                <span></span>
+			            </span>
+		              	Mrs.
+		            </label>
+   		 		</div>
+			</div>
+						<div class="form-group lql-form-content-element">
+				<input type="text" class="form-control lql-register-firstname" name="lql-register-firstname" placeholder="Prénom">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="text" class="form-control lql-register-lastname" name="lql-register-lastname" required="" placeholder="Nom de famille">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="email" class="form-control lql-register-email" name="lql-register-email" required="" placeholder="Adresse e-mail">
+			</div>
+			<div class="form-group lql-form-content-element">
+				<input type="password" class="form-control lql-register-pass" name="lql-register-pass" required="" placeholder="Mot de passe">
+			</div>
+									<div class="form-group lql-form-content-element">
+				<label class="form-control-label">
+		            <input class="newsletter" name="newsletter" type="checkbox" value="1">
+		            Sign up for our newsletter
+		        </label>
+			</div>
+						<div class="form-group text-right">				
+				<button type="submit" name="submit" class="form-control-submit lql-form-bt lql-register-bt btn btn-primary">			
+					<span class="leoquicklogin-loading leoquicklogin-cssload-speeding-wheel"></span>
+					<i class="leoquicklogin-icon leoquicklogin-success-icon material-icons"></i>
+					<i class="leoquicklogin-icon leoquicklogin-fail-icon material-icons"></i>
+					<span class="lql-bt-txt">					
+						Créer un compte
+					</span>
+				</button>
+			</div>
+			<div class="form-group lql-calllogin">
+				<div>Vous avez déj�&nbsp; un compte?</div>
+				<a role="button" href="#" class="lql-calllogin-action">Connectez-vous �&nbsp; la place</a>
+				Ou
+				<a role="button" href="#" class="lql-calllogin-action lql-callreset-action">Réinitialiser le mot de passe</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+        <div class="leoquicklogin-slidebar-bottom">
+            <button type="button" class="leoquicklogin-slidebar-close btn btn-secondary">
+                <i class="material-icons"></i>
+                <span>Fermer</span>
+            </button>
+        </div>
+    </div>
+</div>
+	<div class="leo-fly-cart-mask"></div>
+
+<div class="leo-fly-cart-slidebar slidebar_right">
+	
+	<div class="leo-fly-cart disable-dropdown">
+		<div class="leo-fly-cart-wrapper">
+			<div class="leo-fly-cart-icon-wrapper">
+				<a href="javascript:void(0)" class="leo-fly-cart-icon"><i class="material-icons"></i></a>
+				<span class="leo-fly-cart-total"></span>
+			</div>
+						<div class="leo-fly-cart-cssload-loader"></div>
+		</div>
+	</div>
+
+</div><script>
+    var C_P_DATE = '2024-06-16 08:49';
+    var C_P_REFRESH = 0;
+    var C_P_EXPIRY = 365;
+    var C_P_COOKIE_VALUE = JSON.parse('{"consent_mode":{"cookiesplus-finality-3":{"consent_type":{"analytics_storage":"true"}},"cookiesplus-finality-4":{"consent_type":{"ad_storage":"true","ad_user_data":"true","ad_personalization":"true"}}}}');     var C_P_OVERLAY = '1';
+    var C_P_OVERLAY_OPACITY = '0.5';
+    var C_P_NOT_AVAILABLE_OUTSIDE_EU = 1;
+    var C_P_FINALITIES_COUNT = 4;
+    var PS_COOKIE_SAMESITE = 'Lax';
+    var PS_COOKIE_SECURE = 1;
+
+    /*<!--*/
+    var C_P_THEOBJECT = JSON.parse("{\"1\":{\"cookies\":[{\"id_cookiesplus_cookie\":\"1\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"1\",\"name\":\"cookiesplus\",\"provider\":\"https:\\\/\\\/rpparfums.fr\",\"provider_url\":\"\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Conserver vos pr\\u00e9f\\u00e9rences en mati\\u00e8re de cookies.\",\"expiry\":\"1 ann\\u00e9e\"},{\"id_cookiesplus_cookie\":\"3\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"1\",\"name\":\"PrestaShop-#\",\"provider\":\"https:\\\/\\\/rpparfums.fr\",\"provider_url\":\"\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Ce cookie permet de garder les sessions de l'utilisateur ouvertes pendant leur visite, et lui permettre de passer commande ou tout un ensemble de fonctionnement tels que : date d'ajout du cookie, langue s\\u00e9lectionn\\u00e9e, devise utilis\\u00e9e, derni\\u00e8re cat\\u00e9gorie de produit visit\\u00e9, produits r\\u00e9cemment vus, accord d'utilisation de services du site, Identifiant client, identifiant de connexion, nom, pr\\u00e9nom, \\u00e9tat connect\\u00e9, votre mot de passe chiffr\\u00e9, e-mail li\\u00e9 au compte client, l'identifiant du panier.\",\"expiry\":\"480 heures\"}]},\"3\":{\"cookies\":[{\"id_cookiesplus_cookie\":\"28\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"3\",\"name\":\"collect\",\"provider\":\"Google\",\"provider_url\":\"https:\\\/\\\/policies.google.com\\\/privacy\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Il est utilis\\u00e9 pour envoyer des donn\\u00e9es \\u00e0 Google Analytics sur l'appareil du visiteur et son comportement. Suivez le visiteur \\u00e0 travers les appareils et les canaux marketing.\",\"expiry\":\"Session\"},{\"id_cookiesplus_cookie\":\"29\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"3\",\"name\":\"r\\\/collect\",\"provider\":\"Google\",\"provider_url\":\"https:\\\/\\\/policies.google.com\\\/privacy\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Il est utilis\\u00e9 pour envoyer des donn\\u00e9es \\u00e0 Google Analytics sur l'appareil du visiteur et son comportement. Suivez le visiteur \\u00e0 travers les appareils et les canaux marketing.\",\"expiry\":\"Session\"},{\"id_cookiesplus_cookie\":\"24\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"3\",\"name\":\"_ga\",\"provider\":\"Google\",\"provider_url\":\"https:\\\/\\\/policies.google.com\\\/privacy\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Enregistre un identifiant unique utilis\\u00e9 pour g\\u00e9n\\u00e9rer des donn\\u00e9es statistiques sur la fa\\u00e7on dont le visiteur utilise le site.\",\"expiry\":\"2 ann\\u00e9es\"},{\"id_cookiesplus_cookie\":\"25\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"3\",\"name\":\"_gat\",\"provider\":\"Google\",\"provider_url\":\"https:\\\/\\\/policies.google.com\\\/privacy\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Utilis\\u00e9 par Google Analytics pour diminuer radicalement le taux de requ\\u00eates\",\"expiry\":\"1 jour\"},{\"id_cookiesplus_cookie\":\"31\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"3\",\"name\":\"_ga_#\",\"provider\":\"Google\",\"provider_url\":\"https:\\\/\\\/policies.google.com\\\/privacy\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Utilis\\u00e9 par Google Analytics our recueillir des donn\\u00e9es sur le nombre de fois qu'un utilisateur a visit\\u00e9 le site web ainsi que les dates de la premi\\u00e8re et de la plus r\\u00e9cente visite.\",\"expiry\":\"2 ann\\u00e9es\"},{\"id_cookiesplus_cookie\":\"27\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"3\",\"name\":\"_gd#\",\"provider\":\"Google\",\"provider_url\":\"https:\\\/\\\/policies.google.com\\\/privacy\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Il s'agit d'un cookie de session Google Analytics utilis\\u00e9 pour g\\u00e9n\\u00e9rer des donn\\u00e9es statistiques sur la fa\\u00e7on dont vous utilisez le site Web, qui est supprim\\u00e9 lorsque vous quittez votre navigateur.\",\"expiry\":\"Session\"},{\"id_cookiesplus_cookie\":\"26\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"3\",\"name\":\"_gid\",\"provider\":\"Google\",\"provider_url\":\"https:\\\/\\\/policies.google.com\\\/privacy\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Enregistre un identifiant unique utilis\\u00e9 pour g\\u00e9n\\u00e9rer des donn\\u00e9es statistiques sur la fa\\u00e7on dont le visiteur utilise le site.\",\"expiry\":\"1 jour\"}],\"consent_type\":{\"analytics_storage\":\"true\"},\"firingEvent\":\"\"},\"4\":{\"cookies\":[{\"id_cookiesplus_cookie\":\"47\",\"id_shop\":\"1\",\"active\":\"1\",\"id_cookiesplus_finality\":\"4\",\"name\":\"sib_cuid\",\"provider\":\"Sendinblue\",\"provider_url\":\"https:\\\/\\\/sendinblue.com\\\/legal\\\/privacypolicy\\\/\",\"date_add\":\"2024-04-12 02:50:12\",\"date_upd\":\"2024-04-12 02:50:12\",\"id_lang\":\"2\",\"purpose\":\"Collecte les informations sur la navigation et les pr\\u00e9f\\u00e9rences des utilisateurs sur le site web \\u2013 Cela est utilis\\u00e9 pour cibler une \\u00e9ventuelle newsletter en fonction de ces informations.\",\"expiry\":\"1 ann\\u00e9e\"}],\"consent_type\":{\"ad_storage\":\"true\",\"ad_user_data\":\"true\",\"ad_personalization\":\"true\"},\"firingEvent\":\"\"}}");
+    /*-->*/
+</script>
+<div id="cookiesplus-overlay" class="cookiesplus-move"></div>
+
+<div class="container cookiesplus-move" id="cookiesplus-modal-container">
+    <div class="row">
+        <div id="cookiesplus-modal" style="display: none;" class="cookiesplus-bottom-left col-12 col-xs-12 col-md-9 col-lg-6">
+            <button type="button" class="cookiesplus-close" onclick="return cookieGdpr.close();">×</button>
+
+            <div id="cookiesplus-content">
+                <div class="row">
+                    <form id="cookiesplus-form" method="POST" action="https://rpparfums.fr/fr/module/cookiesplus/front">
+                                                    <div class="cookiesplus-info col-12 col-xs-12">
+                                <div><p>RP Parfums vous demande d'accepter les cookies afin d'optimiser les performances, les fonctionnalités des réseaux sociaux et la pertinence de la publicité. Les cookies tiers liés aux réseaux sociaux et �&nbsp; la publicité sont utilisés pour vous offrir des fonctionnalités optimisées sur les réseaux sociaux, ainsi que des publicités personnalisées. Acceptez-vous ces cookies ?</p></div>
+                            </div>
+                        
+                        <div class="cookiesplus-finalities col-12 col-xs-12">
+                            <div id="cookiesplus-finalities-container">
+                                                                    <div class="cookieplus-finality-container">
+                                        <div class="col-12 col-xs-12">
+                                            <div class="cookiesplus-finality-header">
+                                                <div class="cookiesplus-finality-title" onclick="$(this).parent().siblings('.cookiesplus-finality-content').slideToggle(); $(this).find('.cookiesplus-finality-chevron').toggleClass('bottom up');">
+                                                    <span class="cookiesplus-finality-chevron bottom"></span>
+                                                    <strong><span>Cookies nécessaires</span></strong></div>
+                                                <div class="cookiesplus-finality-switch-container">
+                                                                                                            <label class="technical">Toujours activé</label>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="cookiesplus-finality-content">
+                                                <div class="cookiesplus-finality-body">
+                                                    Les cookies nécessaires contribuent �&nbsp; rendre un site web utilisable en activant des fonctions de base comme la navigation de page et l'accès aux zones sécurisées du site web. Le site web ne peut pas fonctionner correctement sans ces cookies.
+                                                                                                            <table>
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Nom du cookie</th>
+                                                                <th>Fournisseur</th>
+                                                                <th>But</th>
+                                                                <th>Expiration</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>cookiesplus</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span>https://rpparfums.fr</span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Conserver vos préférences en matière de cookies.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>1 année</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>PrestaShop-#</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span>https://rpparfums.fr</span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Ce cookie permet de garder les sessions de l'utilisateur ouvertes pendant leur visite, et lui permettre de passer commande ou tout un ensemble de fonctionnement tels que : date d'ajout du cookie, langue sélectionnée, devise utilisée, dernière catégorie de produit visité, produits récemment vus, accord d'utilisation de services du site, Identifiant client, identifiant de connexion, nom, prénom, état connecté, votre mot de passe chiffré, e-mail lié au compte client, l'identifiant du panier.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>480 heures</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                        </tbody>
+                                                        </table>
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                                                    <div class="cookieplus-finality-container">
+                                        <div class="col-12 col-xs-12">
+                                            <div class="cookiesplus-finality-header">
+                                                <div class="cookiesplus-finality-title" onclick="$(this).parent().siblings('.cookiesplus-finality-content').slideToggle(); $(this).find('.cookiesplus-finality-chevron').toggleClass('bottom up');">
+                                                    <span class="cookiesplus-finality-chevron bottom"></span>
+                                                    <strong><span>Cookies de préférences</span></strong></div>
+                                                <div class="cookiesplus-finality-switch-container">
+                                                                                                            <input class="cookiesplus-finality-checkbox not_uniform comparator" id="cookiesplus-finality-2-off" value="off" name="cookiesplus-finality-2" type="radio" data-no-uniform="true" data-finality-id="2" checked="checked">
+                                                        <input class="cookiesplus-finality-checkbox not_uniform comparator" id="cookiesplus-finality-2-on" value="on" name="cookiesplus-finality-2" type="radio" data-no-uniform="true" data-finality-id="2">
+                                                        <label for="cookiesplus-finality-2-off">Non</label>
+                                                        <span onclick="$('input[name=cookiesplus-finality-2]:checked').val() === 'on' ? $('label[for=cookiesplus-finality-2-off]').click() : $('label[for=cookiesplus-finality-2-on]').click(); return false;" class="cookiesplus-finality-switch" id="cookiesplus-finality-switch-2"></span>
+                                                        <label for="cookiesplus-finality-2-on">Oui</label>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="cookiesplus-finality-content">
+                                                <div class="cookiesplus-finality-body">
+                                                    Les cookies de préférences permettent �&nbsp; un site web de retenir des informations qui modifient la manière dont le site se comporte ou s’affiche, comme votre langue préférée ou la région dans laquelle vous vous situez.
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                                                    <div class="cookieplus-finality-container">
+                                        <div class="col-12 col-xs-12">
+                                            <div class="cookiesplus-finality-header">
+                                                <div class="cookiesplus-finality-title" onclick="$(this).parent().siblings('.cookiesplus-finality-content').slideToggle(); $(this).find('.cookiesplus-finality-chevron').toggleClass('bottom up');">
+                                                    <span class="cookiesplus-finality-chevron bottom"></span>
+                                                    <strong><span>Cookies statistiques</span></strong></div>
+                                                <div class="cookiesplus-finality-switch-container">
+                                                                                                            <input class="cookiesplus-finality-checkbox not_uniform comparator" id="cookiesplus-finality-3-off" value="off" name="cookiesplus-finality-3" type="radio" data-no-uniform="true" data-finality-id="3" checked="checked">
+                                                        <input class="cookiesplus-finality-checkbox not_uniform comparator" id="cookiesplus-finality-3-on" value="on" name="cookiesplus-finality-3" type="radio" data-no-uniform="true" data-finality-id="3">
+                                                        <label for="cookiesplus-finality-3-off">Non</label>
+                                                        <span onclick="$('input[name=cookiesplus-finality-3]:checked').val() === 'on' ? $('label[for=cookiesplus-finality-3-off]').click() : $('label[for=cookiesplus-finality-3-on]').click(); return false;" class="cookiesplus-finality-switch" id="cookiesplus-finality-switch-3"></span>
+                                                        <label for="cookiesplus-finality-3-on">Oui</label>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="cookiesplus-finality-content">
+                                                <div class="cookiesplus-finality-body">
+                                                    Les cookies statistiques aident les propriétaires du site web, par la collecte et la communication d'informations de manière anonyme, �&nbsp; comprendre comment les visiteurs interagissent avec les sites web.
+                                                                                                            <table>
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Nom du cookie</th>
+                                                                <th>Fournisseur</th>
+                                                                <th>But</th>
+                                                                <th>Expiration</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>collect</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://policies.google.com/privacy">Google</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Il est utilisé pour envoyer des données �&nbsp; Google Analytics sur l'appareil du visiteur et son comportement. Suivez le visiteur �&nbsp; travers les appareils et les canaux marketing.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>Session</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>r/collect</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://policies.google.com/privacy">Google</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Il est utilisé pour envoyer des données �&nbsp; Google Analytics sur l'appareil du visiteur et son comportement. Suivez le visiteur �&nbsp; travers les appareils et les canaux marketing.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>Session</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>_ga</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://policies.google.com/privacy">Google</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Enregistre un identifiant unique utilisé pour générer des données statistiques sur la façon dont le visiteur utilise le site.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>2 années</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>_gat</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://policies.google.com/privacy">Google</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Utilisé par Google Analytics pour diminuer radicalement le taux de requêtes</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>1 jour</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>_ga_#</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://policies.google.com/privacy">Google</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Utilisé par Google Analytics our recueillir des données sur le nombre de fois qu'un utilisateur a visité le site web ainsi que les dates de la première et de la plus récente visite.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>2 années</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>_gd#</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://policies.google.com/privacy">Google</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Il s'agit d'un cookie de session Google Analytics utilisé pour générer des données statistiques sur la façon dont vous utilisez le site Web, qui est supprimé lorsque vous quittez votre navigateur.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>Session</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>_gid</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://policies.google.com/privacy">Google</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Enregistre un identifiant unique utilisé pour générer des données statistiques sur la façon dont le visiteur utilise le site.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>1 jour</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                        </tbody>
+                                                        </table>
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                                                    <div class="cookieplus-finality-container">
+                                        <div class="col-12 col-xs-12">
+                                            <div class="cookiesplus-finality-header">
+                                                <div class="cookiesplus-finality-title" onclick="$(this).parent().siblings('.cookiesplus-finality-content').slideToggle(); $(this).find('.cookiesplus-finality-chevron').toggleClass('bottom up');">
+                                                    <span class="cookiesplus-finality-chevron bottom"></span>
+                                                    <strong><span>Cookies marketing</span></strong></div>
+                                                <div class="cookiesplus-finality-switch-container">
+                                                                                                            <input class="cookiesplus-finality-checkbox not_uniform comparator" id="cookiesplus-finality-4-off" value="off" name="cookiesplus-finality-4" type="radio" data-no-uniform="true" data-finality-id="4" checked="checked">
+                                                        <input class="cookiesplus-finality-checkbox not_uniform comparator" id="cookiesplus-finality-4-on" value="on" name="cookiesplus-finality-4" type="radio" data-no-uniform="true" data-finality-id="4">
+                                                        <label for="cookiesplus-finality-4-off">Non</label>
+                                                        <span onclick="$('input[name=cookiesplus-finality-4]:checked').val() === 'on' ? $('label[for=cookiesplus-finality-4-off]').click() : $('label[for=cookiesplus-finality-4-on]').click(); return false;" class="cookiesplus-finality-switch" id="cookiesplus-finality-switch-4"></span>
+                                                        <label for="cookiesplus-finality-4-on">Oui</label>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="cookiesplus-finality-content">
+                                                <div class="cookiesplus-finality-body">
+                                                    Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.
+                                                                                                            <table>
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Nom du cookie</th>
+                                                                <th>Fournisseur</th>
+                                                                <th>But</th>
+                                                                <th>Expiration</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                                            <tr>
+                                                                    <td label="Nom du cookie">
+                                                                        <span>sib_cuid</span>
+                                                                    </td>
+                                                                    <td label="Fournisseur">
+                                                                        <span><a target="_blank" rel="nofollow noopener noreferrer" href="https://sendinblue.com/legal/privacypolicy/">Sendinblue</a></span>
+                                                                    </td>
+                                                                    <td label="But">
+                                                                        <span>Collecte les informations sur la navigation et les préférences des utilisateurs sur le site web – Cela est utilisé pour cibler une éventuelle newsletter en fonction de ces informations.</span>
+                                                                    </td>
+                                                                    <td label="Expiration">
+                                                                        <span>1 année</span>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                        </tbody>
+                                                        </table>
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                                            </div>
+                        </div>
+
+                                                    <div class="cookiesplus-actions col-12 col-xs-12">
+
+                                <div class="first-layer">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4 float-xs-right">
+                                            <button type="submit" name="saveCookiesPlusPreferences" onclick="return cookieGdpr.acceptAllCookies();" class="cookiesplus-btn cookiesplus-accept">
+                                                                                                                                                            <i class="material-icons">done_all</i>
+                                                                                                                                                    <span class="cookiesplus-accept-label">Accepter</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="col-xs-12 col-md-4 float-xs-right">
+                                            <button type="submit" name="saveCookiesPlusPreferences" onclick="return cookieGdpr.rejectAllCookies();" class="cookiesplus-btn cookiesplus-reject" style="">
+                                                                                                                                                            <i class="material-icons">clear</i>
+                                                                                                                                                    <span class="cookiesplus-reject-label">Refuser tous les cookies</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="col-xs-12 col-md-4 float-xs-right">
+                                            <button onclick="cookieGdpr.displayModalAdvanced(true); return false;" class="cookiesplus-btn cookiesplus-more-information">
+                                                                                                                                                <i class="material-icons">tune</i>
+                                                                                                                                            <span>Configurer</span>
+                                        </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="cookiesplus-footer-actions col-xs-12">
+                                                                                            <div class="float-xs-right">
+                                                    <a href="https://rpparfums.fr/fr/content/7-conditions-generales-de-vente-rp-paris" class="float-xs-right cookiesplus-policy" target="_blank" rel="nofollow noopener noreferrer">Politique de confidentialité et de cookies
+                                                    </a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="second-layer">
+                                    <div class="row">
+                                        <div class="col-xs-12  col-md-4 float-xs-right">
+                                            <button type="submit" name="saveCookiesPlusPreferences" onclick="return cookieGdpr.acceptAllCookies();" class="cookiesplus-btn cookiesplus-accept">
+                                                                                                                                                            <i class="material-icons">done_all</i>
+                                                                                                                                                    <span class="cookiesplus-accept-all-label">Accepter tous les cookies</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="col-xs-12 col-md-4 float-xs-right">
+                                            <button type="submit" name="saveCookiesPlusPreferences" onclick="return cookieGdpr.rejectAllCookies();" class="cookiesplus-btn cookiesplus-reject">
+                                                                                                                                                            <i class="material-icons">clear</i>
+                                                                                                                                                    <span class="cookiesplus-reject-all-label">Refuser tous les cookies</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="col-xs-12 col-md-4 float-xs-right">
+                                            <button type="submit" name="saveCookiesPlusPreferences" onclick="return cookieGdpr.save();" class="cookiesplus-btn cookiesplus-save cookiesplus-accept-selected">
+                                                                                                                                                            <i class="material-icons">playlist_add_check</i>
+                                                                                                                                                    Sauvegarder mes préférences
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="cookiesplus-footer-actions col-xs-12">
+                                            <div class="float-xs-left">
+                                                <span id="cookiesplus-back" onclick="cookieGdpr.displayModal(); return false;">← Retour</span>
+                                            </div>
+
+                                                                                            <div class="float-xs-right">
+                                                    <a href="https://rpparfums.fr/fr/content/7-conditions-generales-de-vente-rp-paris" class="float-xs-right cookiesplus-policy" target="_blank" rel="nofollow noopener noreferrer">Politique de confidentialité et de cookies
+                                                    </a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                                            </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="cookiesplus-modal-not-available" style="display: none;" class="cookiesplus-center">
+            <button type="button" class="cookiesplus-close" onclick="return cookieGdpr.close();">×</button>
+            Contenu non disponible
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    // Avoid form resubmission when page is refreshed
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+
+    </script>
+
+
+
+</body></html>
